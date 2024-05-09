@@ -1,0 +1,4 @@
+Create training data - intents.json
+Text preprocessing + BOW
+Create and train the LSTM model
+Create a UI for the chatbot

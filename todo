@@ -2,3 +2,18 @@ Create training data - intents.json
 Text preprocessing + BOW
 Create and train the LSTM model
 Create a UI for the chatbot
+
+
+Datasets
+1. Greeting
+2. Goodbye
+3. Thanks
+4. Name
+5. Schedule / Schedule for bus {}
+6. Route / Route for bus {}
+7. Frequency / Frequency for bus {}
+8. Next bus for bus {}
+9. Operating days
+10. Food and drinks ---
+11. Eligibility for riding the shuttle buses
+

@@ -1,0 +1,238 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up"
+            ],
+            "responses": [
+                "Hey :-)",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Have a nice day"
+            ],
+            "responses": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!"
+            ],
+            "responses": [
+                "Happy to help!",
+                "You are welcome!",
+                "My pleasure",
+                "I'm happy to help!"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "What is your name?",
+                "What should I call you?",
+                "Do you have a name?",
+                "Name"
+            ],
+            "responses": [
+                "You can call me UM Shuttle Bus Chatbot.",
+                "I'm UM Shuttle Bus Chatbot.!",
+                "Just call me UM Shuttle Bus Chatbot.!",
+                "I'm UM Shuttle Bus Chatbot. Nice to meet you!"
+            ]
+        },
+        {
+            "tag": "schedule",
+            "patterns": [
+                "What is the bus schedule?",
+                "Can you tell me the bus schedule?",
+                "Can you show me the bus schedule?",
+                "Where can I find the bus schedule?",
+                "Bus schedule",
+                "Bus timetable"
+            ],
+            "responses": [
+                "Here is the bus schedule: {image of the schedule}",
+                "You can find the bus schedule here: {image of the schedule}",
+                "The bus schedule is available here: {image of the schedule}"
+            ]
+        },
+        {
+            "tag": "schedule for bus A",
+            "patterns": [
+                "What is the schedule for bus A?",
+                "Can you tell me the schedule for bus A?",
+                "Can you show me the schedule for bus A?",
+                "Where can I find the schedule for bus A?",
+                "Bus A schedule",
+                "Bus A timetable",
+                "Bus A time"
+            ],
+            "responses": [
+                "Here is the schedule for bus A: {image of the schedule for bus A}",
+                "You can find the schedule for bus A here: {image of the schedule for bus A}",
+                "The schedule for bus A is available here: {image of the schedule for bus A}"
+            ]
+        },
+        {
+            "tag": "route",
+            "patterns": [
+                "What is the bus route?",
+                "Can you tell me the bus route?",
+                "Can you show me the bus route?",
+                "Where can I find the bus route?",
+                "Bus route",
+                "Bus path"
+            ],
+            "responses": [
+                "Here is the bus route: {image of the route}",
+                "You can find the bus route here: {image of the route}",
+                "The bus route is available here: {image of the route}"
+            ]
+        },
+        {
+            "tag": "route for bus A",
+            "patterns": [
+                "What is the route for bus A?",
+                "Can you tell me the route for bus A?",
+                "Can you show me the route for bus A?",
+                "Where can I find the route for bus A?",
+                "Bus A route",
+                "Bus A path"
+            ],
+            "responses": [
+                "Here is the route for bus A: {image of the route for bus A}",
+                "You can find the route for bus A here: {image of the route for bus A}",
+                "The route for bus A is available here: {image of the route for bus A}"
+            ]
+        },
+        {
+            "tag": "frequency",
+            "patterns": [
+                "How often does the bus come?",
+                "What is the frequency of the bus?",
+                "Can you tell me how often the bus comes?",
+                "Bus frequency",
+                "Bus interval"
+            ],
+            "responses": [
+                "This depends on different routes of the bus. You can check the schedule for more details. For bus A, it comes every 15 minutes. For bus B, it comes every 20 minutes."
+            ]
+        },
+        {
+            "tag": "frequency for bus A",
+            "patterns": [
+                "How often does bus A come?",
+                "What is the frequency of bus A?",
+                "Can you tell me how often bus A comes?",
+                "Bus A frequency",
+                "Bus A interval",
+                "What is the first bus time for bus A?",
+                "What is the last bus time for bus A?",
+                "When is the first bus for bus A?",
+                "When is the last bus for bus A?",
+                "Operating hours for bus A",
+                "Bus A operating hours",
+                "What time does bus A start?",
+                "What time does bus A end?"
+            ],
+            "responses": [
+                "Bus A comes every 15 minutes. The first bus is at 7:00 AM and the last bus is at 10:00 PM."
+            ]
+        },
+        {
+            "tag": "next bus for bus A",
+            "patterns": [
+                "When is the next bus for bus A?",
+                "What time is the next bus for bus A?",
+                "Can you tell me when the next bus for bus A is?",
+                "Next bus for bus A",
+                "Next bus time for bus A"
+            ],
+            "responses": [
+                "The next bus for bus A is at "
+            ]
+        },
+        {
+            "tag": "operating days",
+            "patterns": [
+                "What days does the bus operate?",
+                "Can you tell me the operating days of the bus?",
+                "Bus operating days",
+                "Bus days",
+                "Bus operation days",
+                "Does the bus operate on weekends?",
+                "Does the bus operate on weekdays?",
+                "Does the bus operate on public holidays?",
+                "Does the bus operate on Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays?",
+                "What days does the bus not operate?",
+                "Bus non-operating days",
+                "Bus off days"
+            ],
+            "responses": [
+                "The bus operates every day except for weekends and public holidays.",
+                "The bus operates from Monday to Friday and does not operate on weekends and public holidays."
+            ]
+        },
+        {
+            "tag": "food and drink",
+            "patterns": [
+                "Are there any restrictions on food or drinks while riding the shuttle buses?",
+                "Can I eat or drink on the bus?",
+                "Can I bring food or drink on the bus?",
+                "Food and drink on the bus",
+                "Can I eat on the bus",
+                "Can I drink on the bus"
+            ],
+            "responses": [
+                "Food and drinks are not allowed on the bus. Please consume them before boarding the bus."
+            ]
+        },
+        {
+            "tag": "eligibility for riding the shuttle buses",
+            "patterns": [
+                "Who can use the shuttle buses?",
+                "Can anyone use the shuttle buses?",
+                "Who is allowed to ride the shuttle buses?",
+                "Eligibility for riding the shuttle buses",
+                "Who can ride the shuttle buses",
+                "Who can take the shuttle buses",
+                "Can non-university people use the shuttle bus service?",
+                "Can UM foundation students use the shuttle bus service?",
+                "Can UM staff use the shuttle bus service?",
+                "Can UM lecturers use the shuttle bus service?",
+                "Can UM employees use the shuttle bus service?",
+                "Can UM alumni use the shuttle bus service?",
+                "Can UM visitors use the shuttle bus service?",
+                "Can UM guests use the shuttle bus service?"
+            ],
+            "responses": [
+                "The shuttle bus service is available for all students (including PASUM students), staff, lecturers, employees of the University of Malaya. Non-university people are not allowed to use the shuttle bus service.",
+                "Students of the University of Malaya (including PASUM students), staff, lecturers, and employees are allowed to use the shuttle bus service. Non-university people are not allowed to use the shuttle bus service."
+            ]
+            
+        }
+    ]
+}

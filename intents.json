@@ -12,9 +12,9 @@
                 "Whats up"
             ],
             "responses": [
-                "Hey :-)",
-                "Hi there, what can I do for you?",
-                "Hi there, how can I help?"
+                "Hey :-) I'm UM Shuttle Bus Chatbot. How can I help you?",
+                "Hi there, I'm UM Shuttle Bus Chatbot. What can I do for you?",
+                "Hi there, I'm UM Shuttle Bus Chatbot. How can I help?"
             ]
         },
         {
@@ -64,6 +64,131 @@
             ]
         },
         {
+            "tag": "route",
+            "patterns": [
+                "What is the bus route?",
+                "Can you tell me the bus route?",
+                "Can you show me the bus route?",
+                "Where can I find the bus route?",
+                "Bus route",
+                "Bus path",
+                "How many routes does the bus have?",
+                "How many paths does the bus have?",
+                "Can you show me the route for each bus?"
+            ],
+            "responses": [
+                "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle buses. Here is the UM shuttle bus service route: {image of the route}"
+            ]
+        },
+        {
+            "tag": "route AB",
+            "patterns": [
+                "Can you tell me the route for bus AB?",
+                "Can you show me the route for bus AB?",
+                "Where can I find the route for bus AB?",
+                "Bus AB route",
+                "Bus AB path",
+                "Starting point for bus AB",
+                "Ending point for bus AB",
+                "Bus AB stops",
+                "Bus AB locations",
+                "Route AB"
+            ],
+            "responses": [
+                "The starting and ending points for route AB is at UM Central. There are 8 stops for route AB. Here is the route for bus AB: {image of the route AB}"
+            ]
+        },
+        {
+            "tag": "route BA",
+            "patterns": [
+                "Can you tell me the route for bus BA?",
+                "Can you show me the route for bus BA?",
+                "Where can I find the route for bus BA?",
+                "Bus BA route",
+                "Bus BA path",
+                "Starting point for bus BA",
+                "Ending point for bus BA",
+                "Bus BA stops",
+                "Bus BA locations",
+                "Route BA"
+            ],
+            "responses": [
+                "The starting stops for route BA is at UM Central and the ending point is at the Faculty of Science. There are 8 stops for route BA. Here is the route for bus BA: {image of the route BA}" 
+            ]
+        },
+        {
+            "tag": "route C",
+            "patterns": [
+                "Can you tell me the route for bus C?",
+                "Can you show me the route for bus C?",
+                "Where can I find the route for bus C?",
+                "Bus C route",
+                "Bus C path",
+                "Starting point for bus C",
+                "Ending point for bus C",
+                "Bus C stops",
+                "Bus C locations",
+                "Route C"
+            ],
+            "responses": [
+                "The starting and ending points for route C is at UM Central. There are 7 stops for route C. Here is the route for bus C: {image of the route C}"
+            ]
+        },
+        {
+            "tag": "route D",
+            "patterns": [
+                "Can you tell me the route for bus D?",
+                "Can you show me the route for bus D?",
+                "Where can I find the route for bus D?",
+                "Bus D route",
+                "Bus D path",
+                "Starting point for bus D",
+                "Ending point for bus D",
+                "Bus D stops",
+                "Bus D locations",
+                "Route D"
+            ],
+            "responses": [
+                "The starting point for route D is at the Faculty of Engineering (Corner bus stop to PJ gate) and the ending point is at UM Central. There are 6 stops for route D. Here is the route for bus D: {image of the route D}"
+            ]
+        },
+        {
+            "tag": "route E",
+            "patterns": [
+                "Can you tell me the route for bus E?",
+                "Can you show me the route for bus E?",
+                "Where can I find the route for bus E?",
+                "Bus E route",
+                "Bus E path",
+                "Starting point for bus E",
+                "Ending point for bus E",
+                "Bus E stops",
+                "Bus E locations",
+                "Route E"
+            ],
+            "responses": [
+                "The starting point for route E is at UM Central and the ending point is at the Faculty of Science. There are 3 stops for route E. Here is the route for bus E: {image of the route E}"
+            ]
+        },
+        {
+            "tag": "route 13",
+            "patterns": [
+                "Can you tell me the route for bus 13?",
+                "Can you show me the route for bus 13?",
+                "Where can I find the route for bus 13?",
+                "Bus 13 route",
+                "Bus 13 path",
+                "Starting point for bus 13",
+                "Ending point for bus 13",
+                "Bus 13 stops",
+                "Bus 13 locations",
+                "Route 13"
+            ],
+            "responses": [
+                "The starting point for route 13 is at the Faculty of Engineering (Corner bus stop to PJ gate) and the ending point is at UM Central .There are a total of 2 stops for route 13. Here is the route for bus 13: {image of the route 13}"
+            ]
+        },
+        {
             "tag": "schedule",
             "patterns": [
                 "What is the bus schedule?",
@@ -74,58 +199,7 @@
                 "Bus timetable"
             ],
             "responses": [
-                "Here is the bus schedule: {image of the schedule}",
-                "You can find the bus schedule here: {image of the schedule}",
-                "The bus schedule is available here: {image of the schedule}"
-            ]
-        },
-        {
-            "tag": "schedule for bus A",
-            "patterns": [
-                "What is the schedule for bus A?",
-                "Can you tell me the schedule for bus A?",
-                "Can you show me the schedule for bus A?",
-                "Where can I find the schedule for bus A?",
-                "Bus A schedule",
-                "Bus A timetable",
-                "Bus A time"
-            ],
-            "responses": [
-                "Here is the schedule for bus A: {image of the schedule for bus A}",
-                "You can find the schedule for bus A here: {image of the schedule for bus A}",
-                "The schedule for bus A is available here: {image of the schedule for bus A}"
-            ]
-        },
-        {
-            "tag": "route",
-            "patterns": [
-                "What is the bus route?",
-                "Can you tell me the bus route?",
-                "Can you show me the bus route?",
-                "Where can I find the bus route?",
-                "Bus route",
-                "Bus path"
-            ],
-            "responses": [
-                "Here is the bus route: {image of the route}",
-                "You can find the bus route here: {image of the route}",
-                "The bus route is available here: {image of the route}"
-            ]
-        },
-        {
-            "tag": "route for bus A",
-            "patterns": [
-                "What is the route for bus A?",
-                "Can you tell me the route for bus A?",
-                "Can you show me the route for bus A?",
-                "Where can I find the route for bus A?",
-                "Bus A route",
-                "Bus A path"
-            ],
-            "responses": [
-                "Here is the route for bus A: {image of the route for bus A}",
-                "You can find the route for bus A here: {image of the route for bus A}",
-                "The route for bus A is available here: {image of the route for bus A}"
+                "Here is the bus schedule: {image of the schedule}"
             ]
         },
         {
@@ -135,31 +209,178 @@
                 "What is the frequency of the bus?",
                 "Can you tell me how often the bus comes?",
                 "Bus frequency",
-                "Bus interval"
+                "Bus interval",
+                "What time does shuttle buses start?",
+                "What time does shuttle buses end?",
+                "Operating hours for shuttle buses",
+                "Shuttle buses operating hours",
+                "What time does shuttle buses start operating?",
+                "What time does shuttle buses stop operating?"
             ],
             "responses": [
-                "This depends on different routes of the bus. You can check the schedule for more details. For bus A, it comes every 15 minutes. For bus B, it comes every 20 minutes."
+                "UM shuttles buses operate from 7:30 AM to 10:00 PM. There are 25-26 trips per day depending on the bus route. You can check the schedule for each bus route for more information by asking \" What is the schedule for bus {route name}?\"."
             ]
         },
         {
-            "tag": "frequency for bus A",
+            "tag": "schedule/frequency for bus AB",
             "patterns": [
-                "How often does bus A come?",
-                "What is the frequency of bus A?",
-                "Can you tell me how often bus A comes?",
-                "Bus A frequency",
-                "Bus A interval",
-                "What is the first bus time for bus A?",
-                "What is the last bus time for bus A?",
-                "When is the first bus for bus A?",
-                "When is the last bus for bus A?",
-                "Operating hours for bus A",
-                "Bus A operating hours",
-                "What time does bus A start?",
-                "What time does bus A end?"
+                "What is the schedule for bus AB?",
+                "Can you tell me the schedule for bus AB?",
+                "Can you show me the schedule for bus AB?",
+                "Where can I find the schedule for bus AB?",
+                "Bus AB schedule",
+                "Bus AB timetable",
+                "Bus AB time",
+                "How often does bus AB come?",
+                "What is the frequency of bus AB?",
+                "Can you tell me how often bus AB comes?",
+                "Bus AB frequency",
+                "What is the first bus time for bus AB?",
+                "What is the last bus time for bus AB?",
+                "Operating hours for bus AB",
+                "Bus AB operating hours",
+                "What time does bus AB start?",
+                "What time does bus AB end?"
             ],
             "responses": [
-                "Bus A comes every 15 minutes. The first bus is at 7:00 AM and the last bus is at 10:00 PM."
+                "There are 26 trips per day for bus AB. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus AB: {image of the schedule for bus AB}",
+                "Bus AB operates from 7:30 AM to 10:00 PM and there are 26 trips per day. The schedule for bus AB is available here: {image of the schedule for bus AB}",
+                "The first bus for bus AB is at 7:30 AM and the last bus is at 10:00 PM. There are 26 trips per day for bus AB. You can check the schedule for bus AB here: {image of the schedule for bus AB}"
+            ]
+        },
+        {
+            "tag": "schedule/frequency for bus BA",
+            "patterns": [
+                "What is the schedule for bus BA?",
+                "Can you tell me the schedule for bus BA?",
+                "Can you show me the schedule for bus BA?",
+                "Where can I find the schedule for bus BA?",
+                "Bus BA schedule",
+                "Bus BA timetable",
+                "Bus BA time",
+                "How often does bus BA come?",
+                "What is the frequency of bus BA?",
+                "Can you tell me how often bus BA comes?",
+                "Bus BA frequency",
+                "What is the first bus time for bus BA?",
+                "What is the last bus time for bus BA?",
+                "Operating hours for bus BA",
+                "Bus BA operating hours",
+                "What time does bus BA start?",
+                "What time does bus BA end?"
+            ],
+            "responses": [
+                "There are 26 trips per day for bus BA. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus BA: {image of the schedule for bus BA}",
+                "Bus BA operates from 7:30 AM to 10:00 PM and there are 26 trips per day. The schedule for bus BA is available here: {image of the schedule for bus BA}",
+                "The first bus for bus BA is at 7:30 AM and the last bus is at 10:00 PM. There are 26 trips per day for bus BA. You can check the schedule for bus BA here: {image of the schedule for bus BA}"
+            ]
+        },
+        {
+            "tag": "schedule/frequency for bus C",
+            "patterns": [
+                "What is the schedule for bus C?",
+                "Can you tell me the schedule for bus C?",
+                "Can you show me the schedule for bus C?",
+                "Where can I find the schedule for bus C?",
+                "Bus C schedule",
+                "Bus C timetable",
+                "Bus C time",
+                "How often does bus C come?",
+                "What is the frequency of bus C?",
+                "Can you tell me how often bus C comes?",
+                "Bus C frequency",
+                "What is the first bus time for bus C?",
+                "What is the last bus time for bus C?",
+                "Operating hours for bus C",
+                "Bus C operating hours",
+                "What time does bus C start?",
+                "What time does bus C end?"
+            ],
+            "responses": [
+                "There are 25 trips per day for bus C. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus C: {image of the schedule for bus C}",
+                "Bus C operates from 7:30 AM to 10:00 PM and there are 25 trips per day. The schedule for bus C is available here: {image of the schedule for bus C}",
+                "The first bus for bus C is at 7:30 AM and the last bus is at 10:00 PM. There are 25 trips per day for bus C. You can check the schedule for bus C here: {image of the schedule for bus C}"
+            ]
+        },
+        {
+            "tag": "schedule/frequency for bus D",
+            "patterns": [
+                "What is the schedule for bus D?",
+                "Can you tell me the schedule for bus D?",
+                "Can you show me the schedule for bus D?",
+                "Where can I find the schedule for bus D?",
+                "Bus D schedule",
+                "Bus D timetable",
+                "Bus D time",
+                "How often does bus D come?",
+                "What is the frequency of bus D?",
+                "Can you tell me how often bus D comes?",
+                "Bus D frequency",
+                "What is the first bus time for bus D?",
+                "What is the last bus time for bus D?",
+                "Operating hours for bus D",
+                "Bus D operating hours",
+                "What time does bus D start?",
+                "What time does bus D end?"
+            ],
+            "responses": [
+                "There are 25 trips per day for bus D. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus D: {image of the schedule for bus D}",
+                "Bus D operates from 7:30 AM to 10:00 PM and there are 25 trips per day. The schedule for bus D is available here: {image of the schedule for bus D}",
+                "The first bus for bus D is at 7:30 AM and the last bus is at 10:00 PM. There are 25 trips per day for bus D. You can check the schedule for bus D here: {image of the schedule for bus D}"
+            ]
+        },
+        {
+            "tag": "schedule/frequency for bus E",
+            "patterns": [
+                "What is the schedule for bus E?",
+                "Can you tell me the schedule for bus E?",
+                "Can you show me the schedule for bus E?",
+                "Where can I find the schedule for bus E?",
+                "Bus E schedule",
+                "Bus E timetable",
+                "Bus E time",
+                "How often does bus E come?",
+                "What is the frequency of bus E?",
+                "Can you tell me how often bus E comes?",
+                "Bus E frequency",
+                "What is the first bus time for bus E?",
+                "What is the last bus time for bus E?",
+                "Operating hours for bus E",
+                "Bus E operating hours",
+                "What time does bus E start?",
+                "What time does bus E end?"
+            ],
+            "responses": [
+                "There are 26 trips per day for bus E. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus E: {image of the schedule for bus E}",
+                "Bus E operates from 7:30 AM to 10:00 PM and there are 26 trips per day. The schedule for bus E is available here: {image of the schedule for bus E}",
+                "The first bus for bus E is at 7:30 AM and the last bus is at 10:00 PM. There are 26 trips per day for bus E. You can check the schedule for bus E here: {image of the schedule for bus E}"
+            ]
+        },
+        {
+            "tag": "schedule/frequency for bus 13",
+            "patterns": [
+                "What is the schedule for bus 13?",
+                "Can you tell me the schedule for bus 13?",
+                "Can you show me the schedule for bus 13?",
+                "Where can I find the schedule for bus 13?",
+                "Bus 13 schedule",
+                "Bus 13 timetable",
+                "Bus 13 time",
+                "How often does bus 13 come?",
+                "What is the frequency of bus 13?",
+                "Can you tell me how often bus 13 comes?",
+                "Bus 13 frequency",
+                "What is the first bus time for bus 13?",
+                "What is the last bus time for bus 13?",
+                "Operating hours for bus 13",
+                "Bus 13 operating hours",
+                "What time does bus 13 start?",
+                "What time does bus 13 end?"
+            ],
+            "responses": [
+                "There are 25 trips per day for bus 13. The first bus is at 7:30 AM and the last bus is at 10:00 PM. Here is the schedule for bus 13: {image of the schedule for bus 13}",
+                "Bus 13 operates from 7:30 AM to 10:00 PM and there are 25 trips per day. The schedule for bus 13 is available here: {image of the schedule for bus 13}",
+                "The first bus for bus 13 is at 7:30 AM and the last bus is at 10:00 PM. There are 25 trips per day for bus 13. You can check the schedule for bus E here: {image of the schedule for bus 13}"
             ]
         },
         {
@@ -189,11 +410,12 @@
                 "Does the bus operate on Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays?",
                 "What days does the bus not operate?",
                 "Bus non-operating days",
-                "Bus off days"
+                "Bus off days",
+                "Does the bus operate during Friday Prayer?"
             ],
             "responses": [
-                "The bus operates every day except for weekends and public holidays.",
-                "The bus operates from Monday to Friday and does not operate on weekends and public holidays."
+                "The bus operates every day except during Friday prayer (12.30 PM - 2.30 PM), weekends and public holidays.",
+                "The bus operates from Monday to Friday and does not operate during Friday prayer (12.30 PM - 2.30 PM), weekends and public holidays."
             ]
         },
         {
@@ -226,13 +448,76 @@
                 "Can UM employees use the shuttle bus service?",
                 "Can UM alumni use the shuttle bus service?",
                 "Can UM visitors use the shuttle bus service?",
-                "Can UM guests use the shuttle bus service?"
+                "Can UM guests use the shuttle bus service?",
+                "Can UM foundation students use the shuttle bus service?"
             ],
             "responses": [
-                "The shuttle bus service is available for all students (including PASUM students), staff, lecturers, employees of the University of Malaya. Non-university people are not allowed to use the shuttle bus service.",
-                "Students of the University of Malaya (including PASUM students), staff, lecturers, and employees are allowed to use the shuttle bus service. Non-university people are not allowed to use the shuttle bus service."
+                "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of UM students (not including UM foundation students) and staff only."
+            ]           
+        },
+        {
+            "tag": "student card",
+            "patterns": [
+                "Do I need to have a UM student card to take the shuttle buses?",
+                "Is a UM student card required to take the shuttle buses?",
+                "Do I need to show my UM student card to take the shuttle buses?",
+                "What do I need to bring to take the shuttle buses?"
+            ],
+            "responses": [
+                "You need either a UM student card or an offer letter for those who have not yet obtained a UM student card."
             ]
-            
+        },
+        {
+            "tag": "inquiry and feedback",
+            "patterns": [
+                "Who should I contact if I left something on a shuttle bus?",
+                "What should I do if I left something on a shuttle bus?",
+                "How can I provide feedback or suggestions on the shuttle bus service?",
+                "How can I make an inquiry about the shuttle bus service?",
+                "Who should I contact for shuttle bus inquiries?",
+                "Who should I contact for shuttle bus feedback or suggestions?"
+            ],
+            "responses": [
+                "You can email kenderaanjpphb@um.edu.my or submit it on the UM helpdesk."
+            ]
+        },
+        {
+            "tag": "guidelines",
+            "patterns": [
+                "Are there any guidelines for riding the shuttle buses?",
+                "Are there any specific guidelines for using the shuttle bus service?",
+                "Can you tell me the guidelines for riding the shuttle buses?",
+                "What are the rules for riding the shuttle buses?",
+                "What are the regulations for riding the shuttle buses?"
+            ],
+            "responses": [
+                "- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus" 
+            ]
+        },
+        {
+            "tag": "special use of shuttle buses",
+            "patterns": [
+                "Can I book the shuttle bus for a special event?",
+                "Can I use the shuttle bus for a special event?",
+                "Can I rent the shuttle bus for a special event?",
+                "Can I reserve the shuttle bus for a special event?",
+                "If there is an event that requires the use of the bus, how should I make reservations?"
+            ],
+            "responses": [
+                "You can email your request to kenderaanjpphb@um.edu.my to make a reservation for the shuttle bus for a special event."
+            ]
+        },
+        {
+            "tag": "Foundation students",
+            "patterns": [
+                "Can UM foundation students use the shuttle bus service?",
+                "Are UM foundation students allowed to use the shuttle bus service?",
+                "Can UM foundation students take the shuttle buses?",
+                "Can UM foundation students ride the shuttle buses?"
+            ],
+            "responses": [
+                "UM foundation students are not allowed to use the shuttle bus service, but they may be able to book a chartered bus for special events."
+            ]
         }
     ]
 }

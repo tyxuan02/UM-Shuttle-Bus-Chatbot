@@ -113,7 +113,7 @@
                 "Route BA"
             ],
             "responses": [
-                "The starting stops for route BA is at UM Central and the ending point is at the Faculty of Science. There are 8 stops for route BA. Here is the route for bus BA: {image of the route BA}" 
+                "The starting point for route BA is at UM Central and the ending point is at the Faculty of Science. There are 8 stops for route BA. Here is the route for bus BA: {image of the route BA}" 
             ]
         },
         {
@@ -384,16 +384,99 @@
             ]
         },
         {
-            "tag": "next bus for bus A",
+            "tag": "next/previous bus for route AB",
             "patterns": [
-                "When is the next bus for bus A?",
-                "What time is the next bus for bus A?",
-                "Can you tell me when the next bus for bus A is?",
-                "Next bus for bus A",
-                "Next bus time for bus A"
+                "When is the next bus for route AB?",
+                "When is the previous bus for route AB?",
+                "What time is the next bus for route AB?",
+                "What time is the previous bus for route AB?",
+                "Next bus for route AB",
+                "Previous bus for route AB",
+                "Next bus AB",
+                "Previous bus AB"
             ],
             "responses": [
-                "The next bus for bus A is at "
+                "The next trip for bus A is at {next bus AB time} and the previous trip was at {previous bus AB time}."
+            ]
+        },
+        {
+            "tag": "next/previous bus for route BA",
+            "patterns": [
+                "When is the next bus for route BA?",
+                "When is the previous bus for route BA?",
+                "What time is the next bus for route BA?",
+                "What time is the previous bus for route BA?",
+                "Next bus for route BA",
+                "Previous bus for route BA",
+                "Next bus BA",
+                "Previous bus BA"
+            ],
+            "responses": [
+                "The next trip for bus BA is at {next bus BA time} and the previous trip was at {previous bus BA time}."
+            ]
+        },
+        {
+            "tag": "next/previous bus for route C",
+            "patterns": [
+                "When is the next bus for route C?",
+                "When is the previous bus for route C?",
+                "What time is the next bus for route C?",
+                "What time is the previous bus for route C?",
+                "Next bus for route C",
+                "Previous bus for route C",
+                "Next bus C",
+                "Previous bus C"
+            ],
+            "responses": [
+                "The next trip for bus C is at {next bus C time} and the previous trip was at {previous bus C time}."
+            ]
+        },
+        {
+            "tag": "next/previous bus for route D",
+            "patterns": [
+                "When is the next bus for route D?",
+                "When is the previous bus for route D?",
+                "What time is the next bus for route D?",
+                "What time is the previous bus for route D?",
+                "Next bus for route D",
+                "Previous bus for route D",
+                "Next bus D",
+                "Previous bus D"
+            ],
+            "responses": [
+                "The next trip for bus D is at {next bus D time} and the previous trip was at {previous bus D time}."
+            ]
+        },
+        {
+            "tag": "next/previous bus for route E",
+            "patterns": [
+                "When is the next bus for route E?",
+                "When is the previous bus for route E?",
+                "What time is the next bus for route E?",
+                "What time is the previous bus for route E?",
+                "Next bus for route E",
+                "Previous bus for route E",
+                "Next bus E",
+                "Previous bus E"
+            ],
+            "responses": [
+                "The next trip for bus E is at {next bus E time} and the previous trip was at {previous bus E time}."
+            ]
+        },
+        {
+            "tag": "next/previous bus for route 13",
+            "patterns": [
+                "When is the next bus for route 13?",
+                "When is the previous bus for route 13?",
+                "What time is the next bus for route 13?",
+                "What time is the previous bus for route 13?",
+                "Next bus for route 13",
+                "Previous bus for route 13",
+                "Next bus 13",
+                "Previous bus 13"
+            ],
+            "responses": [
+                "The next trip for bus 13 is at {next bus 13 time} and the previous trip was at {previous bus 13 time}."
             ]
         },
         {
@@ -429,7 +512,7 @@
                 "Can I drink on the bus"
             ],
             "responses": [
-                "Food and drinks are not allowed on the bus. Please consume them before boarding the bus."
+                "Food and drinks are not allowed on the bus."
             ]
         },
         {
@@ -446,10 +529,8 @@
                 "Can UM staff use the shuttle bus service?",
                 "Can UM lecturers use the shuttle bus service?",
                 "Can UM employees use the shuttle bus service?",
-                "Can UM alumni use the shuttle bus service?",
                 "Can UM visitors use the shuttle bus service?",
-                "Can UM guests use the shuttle bus service?",
-                "Can UM foundation students use the shuttle bus service?"
+                "Can UM guests use the shuttle bus service?"
             ],
             "responses": [
                 "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of UM students (not including UM foundation students) and staff only."

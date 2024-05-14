@@ -397,7 +397,7 @@
                 "Previous bus AB"
             ],
             "responses": [
-                "The next trip for bus A is at {next bus AB time} and the previous trip was at {previous bus AB time}."
+                "The next trip for bus AB is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {
@@ -413,7 +413,7 @@
                 "Previous bus BA"
             ],
             "responses": [
-                "The next trip for bus BA is at {next bus BA time} and the previous trip was at {previous bus BA time}."
+                "The next trip for bus BA is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {
@@ -429,7 +429,7 @@
                 "Previous bus C"
             ],
             "responses": [
-                "The next trip for bus C is at {next bus C time} and the previous trip was at {previous bus C time}."
+                "The next trip for bus C is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {
@@ -445,7 +445,7 @@
                 "Previous bus D"
             ],
             "responses": [
-                "The next trip for bus D is at {next bus D time} and the previous trip was at {previous bus D time}."
+                "The next trip for bus D is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {
@@ -461,7 +461,7 @@
                 "Previous bus E"
             ],
             "responses": [
-                "The next trip for bus E is at {next bus E time} and the previous trip was at {previous bus E time}."
+                "The next trip for bus E is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {
@@ -477,7 +477,7 @@
                 "Previous bus 13"
             ],
             "responses": [
-                "The next trip for bus 13 is at {next bus 13 time} and the previous trip was at {previous bus 13 time}."
+                "The next trip for bus 13 is at {next bus time} and the previous trip was at {previous bus time}."
             ]
         },
         {

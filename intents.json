@@ -573,7 +573,7 @@
                 "What are the regulations for riding the shuttle buses?"
             ],
             "responses": [
-                "- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus" 
+                "Guidelines for using the UM shuttle bus service:\n- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus" 
             ]
         },
         {
@@ -590,7 +590,7 @@
             ]
         },
         {
-            "tag": "Foundation students",
+            "tag": "foundation students",
             "patterns": [
                 "Can UM foundation students use the shuttle bus service?",
                 "Are UM foundation students allowed to use the shuttle bus service?",

@@ -95,12 +95,3 @@ def get_previous_bus(current_time, arrival_times):
         if time < current_time:
             return time.strftime(format)
     return arrival_times[-1]
-
-def load_intents():
-    with open('intents.json') as data:
-        intents = json.load(data)
-    return intents
-
-# Testing purposes
-intents = load_intents()
-print(generate_response("next/previous bus for route 13", 0.8, intents))

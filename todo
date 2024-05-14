@@ -3,8 +3,7 @@ Text preprocessing + BOW
 Create and train the LSTM model
 Create a UI for the chatbot
 
-
-Datasets
+Data
 1. Greeting
 2. Goodbye
 3. Thanks

@@ -39,7 +39,8 @@
                 "Thanks",
                 "Thank you",
                 "That's helpful",
-                "Thank's a lot!"
+                "Thank's a lot!",
+                "Thankiu"
             ],
             "responses": [
                 "Happy to help!",
@@ -58,8 +59,8 @@
             ],
             "responses": [
                 "You can call me UM Shuttle Bus Chatbot.",
-                "I'm UM Shuttle Bus Chatbot.!",
-                "Just call me UM Shuttle Bus Chatbot.!",
+                "I'm UM Shuttle Bus Chatbot!",
+                "Just call me UM Shuttle Bus Chatbot!",
                 "I'm UM Shuttle Bus Chatbot. Nice to meet you!"
             ]
         },
@@ -77,7 +78,7 @@
                 "Can you show me the route for each bus?"
             ],
             "responses": [
-                "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle buses. Here is the UM shuttle bus service route: {image of the route}"
+                "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle bus service. Here is the UM shuttle bus service route: {image of the route}"
             ]
         },
         {
@@ -199,7 +200,7 @@
                 "Bus timetable"
             ],
             "responses": [
-                "Here is the bus schedule: {image of the schedule}"
+                "Here is the bus schedule: {images of the schedule}"
             ]
         },
         {

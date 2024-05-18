@@ -1,10 +1,17 @@
 {
     "routes": [
         {
-            "route name": [
-                "AB",
-                "BA",
-                "E"
+            "route name": "AB",
+            "stops": [
+                "UM CENTRAL",
+                "KURSHIAH (KK3) / BESTARI (KK4) / ZA'BA RESIDENTIAL COLLEGE (KK7)",
+                "KINABALU (KK8) & TUN AHMAD ZAIDI RESIDENTIAL COLLEGE (KK10)",
+                "ACADEMY OF ISLAM STUDIES",
+                "UNGKU AZIZ RESIDENTIAL COLLEGE (KK11)",
+                "RAJA DR NAZRIN SHAH RESIDENTIAL COLLEGE (KK12)",
+                "TUNKU ABDUL RAHMAN RESIDENTIAL COLLEGE (KK1)",
+                "FACULTY OF ENGINEERING",
+                "UM CENTRAL"
             ],
             "arrival times": [
                 "07:30",
@@ -36,10 +43,166 @@
             ]
         },
         {
-            "route name": [
-                "C",
-                "D",
-                "13"
+            "route name": "BA",
+            "stops": [
+                "UM CENTRAL",
+                "PUSAT ASASI SAINS (PASUM)",
+                "DAYASARI RESIDENTIAL COLLEGE (KK5)",
+                "ACADEMY OF ISLAM STUDIES",
+                "KINABALU (KK8) & TUN AHMAD ZAIDI RESIDENTIAL COLLEGE (KK10)",
+                "ACADEMY OF MALAY STUDIES",
+                "KURSHIAH (KK3) / BESTARI (KK4) / ZA'BA RESIDENTIAL COLLEGE (KK7)",
+                "FACULTY OF SCIENCE",
+                "UM CENTRAL"
+            ],
+            "arrival times": [
+                "07:30",
+                "08:00",
+                "08:30",
+                "09:00",
+                "09:30",
+                "10:00",
+                "10:30",
+                "11:00",
+                "11:30",
+                "12:00",
+                "12:30",
+                "13:00",
+                "13:30",
+                "14:00",
+                "14:30",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:10",
+                "17:40",
+                "18:00",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:00"
+            ]
+        },
+        {
+            "route name": "C",
+            "stops": [
+                "PANTAI PERMAI OR UM CENTRAL",
+                "PUSAT ASASI SAINS (PASUM)",
+                "KTM ANGKASAPURI STATION",
+                "PANTAI PERMAI",
+                "BANGSAR SOUTH",
+                "FACULTY OF ENGINEERING",
+                "UM CENTRAL"
+            ],
+            "arrival times": [
+                "07:30",
+                "08:00",
+                "08:30",
+                "09:00",
+                "09:30",
+                "10:00",
+                "10:30",
+                "11:00",
+                "11:30",
+                "12:00",
+                "12:30",
+                "13:00",
+                "13:30",
+                "14:00",
+                "14:30",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:10",
+                "17:40",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:00"
+            ]
+        },
+        {
+            "route name": "D",
+            "stops": [
+                "INTERNATIONAL HOUSE OR FACULTY OF ENGINEERING (CORNER BUS STOP TO PJ GATE)",
+                "INTERNATIONAL HOUSE",
+                "RAPID STOP 1, 2, 3, 4 & 5",
+                "INTERNATIONAL HOUSE (OUTSIDE 13 RESIDENTIAL COLLEGE)",
+                "13th RESIDENTIAL COLLEGE (KK13)",
+                "UM CENTRAL"
+            ],
+            "arrival times": [
+                "07:30",
+                "08:00",
+                "08:30",
+                "09:00",
+                "09:30",
+                "10:00",
+                "10:30",
+                "11:00",
+                "11:30",
+                "12:00",
+                "12:30",
+                "13:00",
+                "13:30",
+                "14:00",
+                "14:30",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:10",
+                "17:40",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:00"
+            ]
+        },
+        {
+            "route name": "E",
+            "stops": [
+                "UM CENTRAL",
+                "TUN SYED ZAHIRUDDIN RESIDENTIAL COLLEGE (KK9)",
+                "FACULTY OF SCIENCE",
+                "UM CENTRAL"
+            ],
+            "arrival times": [
+                "07:30",
+                "08:00",
+                "08:30",
+                "09:00",
+                "09:30",
+                "10:00",
+                "10:30",
+                "11:00",
+                "11:30",
+                "12:00",
+                "12:30",
+                "13:00",
+                "13:30",
+                "14:00",
+                "14:30",
+                "15:00",
+                "15:30",
+                "16:00",
+                "16:30",
+                "17:10",
+                "17:40",
+                "18:00",
+                "19:00",
+                "20:00",
+                "21:00",
+                "22:00"
+            ]
+        },
+        {
+            "route name": "13",
+            "stops": [
+                "13th RESIDENTIAL COLLEGE (KK13) OR FACULTY OF ENGINEERING (CORNER BUS STOP TO PJ GATE)",
+                "UM CENTRAL"
             ],
             "arrival times": [
                 "07:30",

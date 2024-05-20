@@ -672,7 +672,7 @@
         },
         {
             "tag": "duration",
-            "pattern": [
+            "patterns": [
                 "How long does the shuttle bus take to travel from one stop to another?",
                 "How long does the shuttle bus take to travel from the one point to the another point?",
                 "How long does the shuttle bus take from one stop to another?",
@@ -685,7 +685,7 @@
         },
         {
             "tag": "track bus",
-            "pattern": [
+            "patterns": [
                 "Can I track the shuttle bus?",
                 "Is there a way to track the shuttle bus?",
                 "How can I track the shuttle bus?",

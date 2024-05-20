@@ -67,14 +67,13 @@ def handle_next_previous_bus(selected_route, selected_response):
     with open('data.json') as data:
         schedule = json.load(data)
 
-    for routes in schedule['routes']:
-        for route in routes['route name']:
-            if route == selected_route:
-                next_bus_time = get_next_bus(current_time, routes['arrival times'])
-                previous_bus_time = get_previous_bus(current_time, routes['arrival times'])
+    for route in schedule['routes']:
+        if route['route name'] == selected_route:
+            next_bus_time = get_next_bus(current_time, route['arrival times'])
+            previous_bus_time = get_previous_bus(current_time, route['arrival times'])
                 
-                selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
-                return selected_response, None
+            selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
+            return selected_response, None
 
 def get_next_bus(current_time, arrival_times):
     format = "%H:%M"

@@ -1,8 +1,14 @@
 # Chatbot implementation (and UI)
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import json
 import streamlit as st
+import numpy as np
 from PIL import Image
 from response import generate_response
+from keras.models import load_model
+from nlp_utils import bag_of_words, preprocess_text
 
 @st.cache_data
 def load_intents():
@@ -10,7 +16,40 @@ def load_intents():
         intents = json.load(data)
     return intents
 
+@st.cache_data
+def load_words_and_tags():
+    all_words = []
+    tags = []
+    # loop through each sentence in our intents patterns
+    for intent in intents['intents']:
+        tag = intent['tag']
+        # add to tag list
+        tags.append(tag)
+        for pattern in intent['patterns']:
+            # text preprocessing
+            words = preprocess_text(pattern)
+            # add to our words list
+            all_words.extend(words)
+
+    # remove duplicates and sort
+    all_words = sorted(set(all_words))
+    tags = sorted(set(tags))
+
+    return all_words, tags
+
+@st.cache_resource()
+def load_model_once():
+    print("hi")
+    model = load_model('lstm_model.h5')
+    return model
+
+# Load the model
+model = load_model_once()
+
 intents = load_intents()
+all_words, tags = load_words_and_tags()
+
+
 
 st.title("UM Shuttle Bus Chatbot")
 st.button("Reset chat", on_click=lambda: st.session_state.pop("messages", None))
@@ -31,7 +70,14 @@ if prompt := st.chat_input("Ask me something..."):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    response, image = generate_response(prompt, 0.8, intents)
+    preprocessed_sentence = preprocess_text(prompt)
+    X_new = np.array([bag_of_words(preprocessed_sentence, all_words)])
+    y_pred = model.predict(X_new, verbose=0)
+    predicted_tag = tags[np.argmax(y_pred)]
+    tag_probability = y_pred[0][np.argmax(y_pred)]
+    print(predicted_tag, tag_probability)
+
+    response, image = generate_response(predicted_tag, tag_probability, intents)
 
     with st.chat_message("assistant"):
         st.markdown(response)

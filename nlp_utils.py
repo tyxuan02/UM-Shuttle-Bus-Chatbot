@@ -1,21 +1,34 @@
 # Text preprocessing
 import numpy as np
+import re
 import nltk
-nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
+from nltk.corpus import stopwords
+
 stemmer = PorterStemmer()
 
-def tokenize(sentence):
-    return nltk.word_tokenize(sentence)
+def preprocess_text(text):
+    # Lowercasing
+    text = text.lower()
 
+    # Remove punctuation
+    text = re.sub(r'[^\w\s]', '', text)
 
-def stem(word):
-    return stemmer.stem(word.lower())
+    # Tokenization
+    words = nltk.word_tokenize(text)
+
+    # # Remove stopwords
+    # words = [w for w in words if w not in stopwords.words('english')]
+
+    # Stemming
+    words = [stemmer.stem(w) for w in words]
+
+    return words
 
 # BOW implementation
 def bag_of_words(tokenized_sentence, words):
     # stem each word
-    sentence_words = [stem(word) for word in tokenized_sentence]
+    sentence_words = [word for word in tokenized_sentence]
     # initialize bag with 0 for each word
     bag = np.zeros(len(words), dtype=np.float32)
     for idx, w in enumerate(words):

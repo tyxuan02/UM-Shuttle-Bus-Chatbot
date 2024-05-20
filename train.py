@@ -1,11 +1,17 @@
 # Train the model using the training data
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import numpy as np
 import json
 
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense
+from keras import optimizers, losses
+from keras import layers
 import tensorflow as tf
-from keras import layers, models, optimizers, losses
 
-from nlp_utils import bag_of_words, tokenize, stem
+from nlp_utils import bag_of_words, preprocess_text
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -19,16 +25,13 @@ for intent in intents['intents']:
     # add to tag list
     tags.append(tag)
     for pattern in intent['patterns']:
-        # tokenize each word in the sentence
-        w = tokenize(pattern)
+        # text preprocessing
+        words = preprocess_text(pattern)
         # add to our words list
-        all_words.extend(w)
+        all_words.extend(words)
         # add to xy pair
-        xy.append((w, tag))
+        xy.append((words, tag))
 
-# stem and lower each word
-ignore_words = ['?', '.', '!']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
@@ -52,7 +55,7 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
+num_epochs = 200
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
@@ -60,54 +63,16 @@ hidden_size = 8
 output_size = len(tags)
 print(input_size, output_size)
 
-class NeuralNet(tf.keras.Model):
-    def __init__(self, input_size, hidden_size, output_size):
-        super(NeuralNet, self).__init__()
-        self.dense1 = layers.Dense(hidden_size, activation='relu', input_shape=(input_size,))
-        self.dense2 = layers.Dense(hidden_size, activation='relu')
-        self.dense3 = layers.Dense(output_size)
+model = Sequential([
+    Dense(hidden_size, activation='relu', input_shape=(input_size,)),
+    Dense(hidden_size, activation='relu'),
+    Dense(output_size, activation='softmax')
+])
 
-    def call(self, x):
-        x = self.dense1(x)
-        x = self.dense2(x)
-        x = self.dense3(x)
-        return x
+model.compile(optimizer=optimizers.Adam(learning_rate=learning_rate), loss=losses.SparseCategoricalCrossentropy(), metrics=['accuracy'])
 
-model = NeuralNet(input_size, hidden_size, output_size)
-model.compile(optimizer=optimizers.Adam(learning_rate=learning_rate),
-              loss=losses.SparseCategoricalCrossentropy(from_logits=True),
-              metrics=['accuracy'])
-
-# Create a tf.data.Dataset
-train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train))
-train_dataset = train_dataset.shuffle(len(X_train)).batch(batch_size)
-
-# Training loop
-for epoch in range(num_epochs):
-    for step, (words, labels) in enumerate(train_dataset):
-        with tf.GradientTape() as tape:
-            outputs = model(words, training=True)
-            loss = model.compiled_loss(labels, outputs)
-        gradients = tape.gradient(loss, model.trainable_variables)
-        model.optimizer.apply_gradients(zip(gradients, model.trainable_variables))
-        
-    if (epoch+1) % 100 == 0:
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss:.4f}')
-
-print(f'final loss: {loss:.4f}')
+# Fit the model
+model.fit(X_train, y_train, epochs=num_epochs, batch_size=batch_size)
 
 # Save the model and training data
-model.save('chat_model', save_format='tf')
-
-data = {
-    "input_size": input_size,
-    "hidden_size": hidden_size,
-    "output_size": output_size,
-    "all_words": all_words,
-    "tags": tags
-}
-
-with open('data.json', 'w') as f:
-    json.dump(data, f)
-
-print('training complete. file saved to chat_model.h5 and data.json')
+model.save('lstm_model.h5')

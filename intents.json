@@ -4,6 +4,7 @@
             "tag": "greeting",
             "patterns": [
                 "Hi",
+                "Hihi",
                 "Hey",
                 "How are you",
                 "Is anyone there?",
@@ -217,7 +218,10 @@
                 "Can you show me the bus schedule?",
                 "Where can I find the bus schedule?",
                 "Bus schedule",
-                "Bus timetable"
+                "Bus timetable",
+                "Bus time",
+                "Timetable",
+                "Schedule"
             ],
             "responses": [
                 "Here is the bus schedule:"
@@ -708,7 +712,13 @@
                 "What can you help me with?",
                 "What can you assist me with?",
                 "What can you provide information on?",
-                "What can you answer questions on?"
+                "What can you answer questions on?",
+                "What can you provide answers to?",
+                "What can you do?",
+                "How can you help me?",
+                "Can you show me something",
+                "Can you provide information on something",
+                "Can you answer questions on something"
             ],
             "responses": [
                 "You can ask me about the bus routes, bus schedules, bus frequencies, bus operating days, bus guidelines, bus inquiries and any other questions related to the UM shuttle bus service.",

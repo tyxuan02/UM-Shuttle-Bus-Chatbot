@@ -45,5 +45,5 @@ st.markdown("""
 # Reminder
 st.write("\n\n")
 st.markdown("""
-**Remember**, the chatbot is trained on a limited dataset, so there may be some questions it can't answer accurately. If you have a question that the chatbot can't answer, or if you need more detailed information, we recommend checking the official UM Shuttle Bus service resources.
+**Remember**: The chatbot is trained on a limited dataset, so there may be some questions it can't answer accurately. If you have a question that the chatbot can't answer, or if you need more detailed information, we recommend checking the official UM Shuttle Bus service resources. Besides, please ensure the words you use are correct and clear to get the best response from the chatbot.
 """)

@@ -102,9 +102,9 @@ def generate_response(tag, tag_prob, intents, data):
                    
                 return selected_response, None
                 
-        return "I'm sorry, I don't understand. Please try again.", None
+        return "I'm sorry, I don't understand. Please try a different question.", None
     else:
-        return "I'm sorry, I don't understand. Please try again.", None
+        return "I'm sorry, I don't understand. Please try a different question.", None
 
 def handle_next_previous_bus(selected_route, data, selected_response):
     # Get current time

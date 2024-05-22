@@ -143,7 +143,8 @@
                 "Can you show me the route for each bus?",
                 "Where are the shuttle bus stops located?",
                 "Where are the shuttle bus stops?",
-                "How many routes are there for the UM shuttle bus service?"
+                "How many routes are there for the UM shuttle bus service?",
+                "Shuttle bus routes in UM"
             ],
             "responses": [
                 "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle bus service. Here is the UM shuttle bus routes:",
@@ -318,7 +319,12 @@
                 "Bus timetable",
                 "Bus time",
                 "Timetable",
-                "Schedule"
+                "Schedule",
+                "Schedule for the UM shuttle bus service",
+                "Timetable for the UM shuttle bus service",
+                "Shuttle bus service schedule",
+                "Shuttle bus service timetable",
+                "Shuttle bus service time"
             ],
             "responses": [
                 "Here is the bus schedule:",
@@ -335,8 +341,11 @@
                 "Bus frequency",
                 "What time does shuttle buses start?",
                 "What time does shuttle buses end?",
+                "What time does the shuttle bus start?",
+                "What time does the shuttle bus end?",
                 "Operating hours for shuttle buses",
-                "Shuttle buses operating hours",
+                "Operating hours for shuttle service",
+                "Shuttle bus operating hours",
                 "What time does shuttle buses start operating?",
                 "What time does shuttle buses stop operating?",
                 "How frequent are the shuttle buses?",
@@ -351,7 +360,11 @@
                 "How often do the shuttle buses come?",
                 "What is the shuttle service frequency?",
                 "When does the shuttle service start?",
-                "When does the shuttle service end?"
+                "When does the shuttle service end?",
+                "What time does the shuttle bus service start?",
+                "What time does the shuttle bus service end?",
+                "What is the last bus time?",
+                "What is the first bus time?"
             ],
             "responses": [
                 "UM shuttles buses operate from 7:30 AM to 10:00 PM. There are 25-26 trips per day depending on the bus route. You can check the schedule for each bus route for more information by asking \" What is the schedule for bus {route name}?\".",
@@ -754,12 +767,12 @@
                 "Can I eat or drink while on the bus?",
                 "Can I have a snack or drink on the bus?",
                 "Can I consume food or beverages while on the bus?",
-                "Can I bring food or drinks to the bus?"
+                "Can I bring food to the bus?",
+                "Can I bring drinks to the bus?"
             ],
             "responses": [
                 "Food and drinks are not allowed on the bus.",
-                "Eating and drinking are not permitted on the bus.",
-                "Consuming food and drinks is prohibited on the bus."
+                "Food and drinks are prohibited on the bus."
             ]
         },
         {
@@ -898,7 +911,7 @@
                 "How can I give my suggestions on the shuttle bus service?"
             ],
             "responses": [
-                "You can email kenderaanjpphb@um.edu.my or submit it on the UM helpdesk.",
+                "You can email kenderaanjpphb@um.edu.my or submit a report/complaint on the UM helpdesk.",
                 "You have the option to send your inquiry to kenderaanjpphb@um.edu.my or alternatively, you may choose to address your concerns through the UM support desk."
             ]
         },
@@ -929,7 +942,7 @@
                 "Any rules or guidelines or regulations?"
             ],
             "responses": [
-                "Guidelines for using the UM shuttle bus service:\n- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus",
+                "Guidelines for using the shuttle bus service include presenting your UM student identification card upon boarding, forming an orderly line while getting on and off the bus, and refraining from eating or drinking on the bus.",
                 "To utilize the University of Malaya's shuttle bus service, it is mandatory for passengers to present their UM student identification card upon entering the bus. This service is exclusively available to the university's students and staff members. Additionally, it is required to form an orderly line while getting on and off the bus to ensure a smooth and efficient transportation experience for all."
             ]
         },
@@ -1114,7 +1127,7 @@
             ],
             "responses": [
                 "To go to UM Central bus stop, you can take the buses of route(s): ",
-                "To reach UM Central bus stop, you can use the following bus route(s): ",
+                "To get to UM Central bus stop, you can use the following bus route(s): ",
                 "To travel to UM Central bus stop, you can board the buses of route(s): "
             ]
         }, 
@@ -1159,7 +1172,7 @@
             ],
             "responses": [
                 "To go to KK13 bus stop, you can take the buses of route(s): ",
-                "To reach KK13 bus stop, you can use the following bus route(s): ",
+                "To get to KK13 bus stop, you can use the following bus route(s): ",
                 "To travel to KK13 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1211,7 +1224,7 @@
             ],
             "responses": [
                 "To go to KK12 bus stop, you can take the buses of route(s): ",
-                "To reach KK12 bus stop, you can use the following bus route(s): ",
+                "To get to KK12 bus stop, you can use the following bus route(s): ",
                 "To travel to KK12 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1263,7 +1276,7 @@
             ],
             "responses": [
                 "To go to KK11 bus stop, you can take the buses of route(s): ",
-                "To reach KK11 bus stop, you can use the following bus route(s): ",
+                "To get to KK11 bus stop, you can use the following bus route(s): ",
                 "To travel to KK11 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1315,7 +1328,7 @@
             ],
             "responses": [
                 "To go to KK10 bus stop, you can take the buses of route(s): ",
-                "To reach KK10 bus stop, you can use the following bus route(s): ",
+                "To get to KK10 bus stop, you can use the following bus route(s): ",
                 "To travel to KK10 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1367,7 +1380,7 @@
             ],
             "responses": [
                 "To go to KK9 bus stop, you can take the buses of route(s): ",
-                "To reach KK9 bus stop, you can use the following bus route(s): ",
+                "To get to KK9 bus stop, you can use the following bus route(s): ",
                 "To travel to KK9 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1419,7 +1432,7 @@
             ],
             "responses": [
                 "To go to KK8 bus stop, you can take the buses of route(s): ",
-                "To reach KK8 bus stop, you can use the following bus route(s): ",
+                "To get to KK8 bus stop, you can use the following bus route(s): ",
                 "To travel to KK8 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1471,7 +1484,7 @@
             ],
             "responses": [
                 "To go to KK7 bus stop, you can take the buses of route(s): ",
-                "To reach KK7 bus stop, you can use the following bus route(s): ",
+                "To get to KK7 bus stop, you can use the following bus route(s): ",
                 "To travel to KK7 bus stop, you can board the buses of route(s): "
             ]
 
@@ -1524,7 +1537,7 @@
             ],
             "responses": [
                 "To go to KK5 bus stop, you can take the buses of route(s): ",
-                "To reach KK5 bus stop, you can use the following bus route(s): ",
+                "To get to KK5 bus stop, you can use the following bus route(s): ",
                 "To travel to KK5 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1576,7 +1589,7 @@
             ],
             "responses": [
                 "To go to KK4 bus stop, you can take the buses of route(s): ",
-                "To reach KK4 bus stop, you can use the following bus route(s): ",
+                "To get to KK4 bus stop, you can use the following bus route(s): ",
                 "To travel to KK4 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1628,7 +1641,7 @@
             ],
             "responses": [
                 "To go to KK3 bus stop, you can take the buses of route(s): ",
-                "To reach KK3 bus stop, you can use the following bus route(s): ",
+                "To get to KK3 bus stop, you can use the following bus route(s): ",
                 "To travel to KK3 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1680,7 +1693,7 @@
             ],
             "responses": [
                 "To go to KK1 bus stop, you can take the buses of route(s): ",
-                "To reach KK1 bus stop, you can use the following bus route(s): ",
+                "To get to KK1 bus stop, you can use the following bus route(s): ",
                 "To travel to KK1 bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1697,7 +1710,7 @@
             ],
             "responses": [
                 "To go to International House bus stop, you can take the buses of route(s): ",
-                "To reach International House bus stop, you can use the following bus route(s): ",
+                "To get to International House bus stop, you can use the following bus route(s): ",
                 "To travel to International House bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1721,7 +1734,7 @@
             ],
             "responses": [
                 "To go to Faculty of Engineering bus stop, you can take the buses of route(s): ",
-                "To reach Faculty of Engineering bus stop, you can use the following bus route(s): ",
+                "To get to Faculty of Engineering bus stop, you can use the following bus route(s): ",
                 "To travel to Faculty of Engineering bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1745,7 +1758,7 @@
             ],
             "responses": [
                 "To go to Faculty of Science bus stop, you can take the buses of route(s): ",
-                "To reach Faculty of Science bus stop, you can use the following bus route(s): ",
+                "To get to Faculty of Science bus stop, you can use the following bus route(s): ",
                 "To travel to Faculty of Science bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1762,7 +1775,7 @@
             ],
             "responses": [
                 "To go to Academy of Islamic Studies bus stop, you can take the buses of route(s): ",
-                "To reach Academy of Islamic Studies bus stop, you can use the following bus route(s): ",
+                "To get to Academy of Islamic Studies bus stop, you can use the following bus route(s): ",
                 "To travel to Academy of Islamic Studies bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1779,7 +1792,7 @@
             ],
             "responses": [
                 "To go to Academy of Malay Studies bus stop, you can take the buses of route(s): ",
-                "To reach Academy of Malay Studies bus stop, you can use the following bus route(s): ",
+                "To get to Academy of Malay Studies bus stop, you can use the following bus route(s): ",
                 "To travel to Academy of Malay Studies bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1796,7 +1809,7 @@
             ],
             "responses": [
                 "To go to Bangsar South bus stop, you can take the buses of route(s): ",
-                "To reach Bangsar South bus stop, you can use the following bus route(s): ",
+                "To get to Bangsar South bus stop, you can use the following bus route(s): ",
                 "To travel to Bangsar South bus stop, you can board the buses of route(s): "
             ]
         }, 
@@ -1813,7 +1826,7 @@
             ], 
             "responses": [
                 "To go to KTM Angkasapuri Station bus stop, you can take the buses of route(s): ",
-                "To reach KTM Angkasapuri Station bus stop, you can use the following bus route(s): ",
+                "To get to KTM Angkasapuri Station bus stop, you can use the following bus route(s): ",
                 "To travel to KTM Angkasapuri Station bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1830,7 +1843,7 @@
             ],
             "responses": [
                 "To go to Pantai Permai bus stop, you can take the buses of route(s): ",
-                "To reach Pantai Permai bus stop, you can use the following bus route(s): ",
+                "To get to Pantai Permai bus stop, you can use the following bus route(s): ",
                 "To travel to Pantai Permai bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1861,7 +1874,7 @@
             ],
             "responses": [
                 "To go to PASUM bus stop, you can take the buses of route(s): ",
-                "To reach PASUM bus stop, you can use the following bus route(s): ",
+                "To get to PASUM bus stop, you can use the following bus route(s): ",
                 "To travel to PASUM bus stop, you can board the buses of route(s): "
             ]
         },
@@ -1906,7 +1919,7 @@
             ],
             "responses": [
                 "To go to Rapid Stop 1, 2, 3, 4 & 5, you can take the buses of route(s): ",
-                "To reach Rapid Stop 1, 2, 3, 4 & 5, you can use the following bus route(s): ",
+                "To get to Rapid Stop 1, 2, 3, 4 & 5, you can use the following bus route(s): ",
                 "To travel to Rapid Stop 1, 2, 3, 4 & 5, you can board the buses of route(s): "
             ]
         }

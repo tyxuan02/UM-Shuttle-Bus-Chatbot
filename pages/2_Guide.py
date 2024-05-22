@@ -3,8 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="UM Shuttle Bus Chatbot", page_icon="🚌")
 
 # Title
-st.title("📝 UM Shuttle Bus Chatbot Guide")
-
+st.title("📖 UM Shuttle Bus Chatbot Guide")
 st.write("-----------\n\n")
 
 # Introduction
@@ -15,9 +14,9 @@ Welcome to the UM Shuttle Bus Chatbot! This chatbot is designed to provide infor
 # Sections with questions
 st.subheader("Bus Routes")
 st.markdown("""
-- What are the bus routes?
 - Can you show me the route for each bus?
 - Where are the shuttle bus stops for route AB?
+- Which buses go to Kolej Kediaman Kinabalu bus stop?
 """)
 
 st.subheader("Bus Schedule")

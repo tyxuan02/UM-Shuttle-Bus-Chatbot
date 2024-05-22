@@ -4,10 +4,8 @@ st.set_page_config(page_title="UM Shuttle Bus Chatbot", page_icon="🚌")
 
 # Title
 st.title("📝 Disclaimer")
-
 st.write("-----------\n\n")
 
-# Use container to add padding and better formatting
 with st.container():
     st.markdown("""
     <style>

@@ -11,7 +11,7 @@ def generate_response(tag, tag_prob, intents, data):
                 responses = intent['responses']
                 selected_response = random.choice(responses)
 
-                # Handle the responses
+                # Handle specific responses
                 match tag:
                     # Route
                     case "route":
@@ -31,17 +31,17 @@ def generate_response(tag, tag_prob, intents, data):
                     # Schedule
                     case "schedule":
                         return selected_response, "images/Schedule.png"
-                    case "schedule AB":
-                        return selected_response, "images/Schedule_AB.png"
-                    case "schedule BA":
-                        return selected_response, "images/Schedule_BA.png"
-                    case "schedule C":
+                    case "schedule/frequency for bus AB":
+                        return selected_response, "images/Schedule_AB_BA_E.png"
+                    case "schedule/frequency for bus BA":
+                        return selected_response, "images/Schedule_AB_BA_E.png"
+                    case "schedule/frequency for bus C":
                         return selected_response, "images/Schedule_C.png"
-                    case "schedule D":
+                    case "schedule/frequency for bus D":
                         return selected_response, "images/Schedule_D.png"
-                    case "schedule E":
-                        return selected_response, "images/Schedule_E.png"
-                    case "schedule 13":
+                    case "schedule/frequency for bus E":
+                        return selected_response, "images/Schedule_AB_BA_E.png"
+                    case "schedule/frequency for bus 13":
                         return selected_response, "images/Schedule_13.png"
                     # Next and previous bus times
                     case "next/previous bus for route AB":
@@ -61,10 +61,24 @@ def generate_response(tag, tag_prob, intents, data):
                         return get_routes_for_destination("UM CENTRAL", selected_response, data)
                     case "KK13":
                         return get_routes_for_destination("KK13", selected_response, data)
+                    case "KK12":
+                        return get_routes_for_destination("KK12", selected_response, data)
+                    case "KK11":
+                        return get_routes_for_destination("KK11", selected_response, data)
+                    case "KK10":
+                        return get_routes_for_destination("KK10", selected_response, data)
                     case "KK8":
                         return get_routes_for_destination("KK8", selected_response, data)
+                    case "KK7":
+                        return get_routes_for_destination("KK7", selected_response, data)
                     case "KK5":
                         return get_routes_for_destination("KK5", selected_response, data)
+                    case "KK4":
+                        return get_routes_for_destination("KK4", selected_response, data)
+                    case "KK3":
+                        return get_routes_for_destination("KK3", selected_response, data)
+                    case "KK1":
+                        return get_routes_for_destination("KK1", selected_response, data)
                     case "INTERNATIONAL HOUSE":
                         return get_routes_for_destination("INTERNATIONAL HOUSE", selected_response, data)
                     case "FACULTY OF ENGINEERING":
@@ -77,8 +91,15 @@ def generate_response(tag, tag_prob, intents, data):
                         return get_routes_for_destination("ACADEMY OF MALAY STUDIES", selected_response, data)
                     case "BANGSAR SOUTH":
                         return get_routes_for_destination("BANGSAR SOUTH", selected_response, data)
-
-                
+                    case "KTM ANGKASAPURI STATION":
+                        return get_routes_for_destination("KTM ANGKASAPURI STATION", selected_response, data)
+                    case "PANTAI PERMAI":
+                        return get_routes_for_destination("PANTAI PERMAI", selected_response, data)
+                    case "PASUM":
+                        return get_routes_for_destination("PASUM", selected_response, data)
+                    case "RAPID STOP":
+                        return get_routes_for_destination("RAPID STOP", selected_response, data)
+                   
                 return selected_response, None
                 
         return "I'm sorry, I don't understand. Please try again.", None

@@ -18,7 +18,8 @@ with open('intents.json', 'r') as f:
 all_words = []
 tags = []
 xy = []
-# loop through each sentence in our intents patterns
+
+# loop through each sentence in intents patterns
 for intent in intents['intents']:
     tag = intent['tag']
     # add to tag list
@@ -26,7 +27,7 @@ for intent in intents['intents']:
     for pattern in intent['patterns']:
         # text preprocessing
         words = preprocess_text(pattern)
-        # add to our words list
+        # add to the words list
         all_words.extend(words)
         # add to xy pair
         xy.append((words, tag))
@@ -62,6 +63,7 @@ hidden_size = 64
 output_size = len(tags)
 print(input_size, output_size)
 
+# Build a model
 model = Sequential([
     Dense(hidden_size, activation='relu', input_shape=(input_size,)),
     Dropout(0.5),
@@ -78,7 +80,6 @@ history = model.fit(X_train, y_train, epochs=num_epochs, batch_size=batch_size)
 # Get the accuracy and loss of the model
 accuracy = history.history['accuracy'][-1]
 loss = history.history['loss'][-1]
-
 print(f"Accuracy: {accuracy:.2f}")
 print(f"Loss: {loss:.2f}")
 

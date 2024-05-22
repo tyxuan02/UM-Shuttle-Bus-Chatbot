@@ -14,4 +14,4 @@ responses.json - handles the responses before displaying them in the UI
 
 To download required libraries: pip install -r requirements.txt
 
-To run the chatbot: streamlit run chatbot.py
+To run the chatbot: streamlit run .\1_🤖_Chatbot.py

@@ -6,6 +6,7 @@ from nltk.stem.porter import PorterStemmer
 
 stemmer = PorterStemmer()
 
+# Preprocess text
 def preprocess_text(text):
     # Lowercasing
     text = text.lower()

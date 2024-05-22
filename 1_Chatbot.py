@@ -37,13 +37,26 @@ def load_data_and_model():
 
     return intents, data, all_words, tags, model
 
+def stream_response(response):
+    for word in response.split():
+        yield word + " "
+        time.sleep(0.05)
+
+def get_color_confidence(confidence):
+    if confidence >= 0.90:
+        return "green"
+    elif confidence >= 0.8:
+        return "orange"
+    elif confidence >= 0.75:
+        return "red"
+
+# Load data and model
 intents, data, all_words, tags, model = load_data_and_model()
 
 # Streamlit UI
 st.title("🤖 UM Shuttle Bus Chatbot")
 st.write("-----------\n\n")
 
-# Reset chat button
 if st.sidebar.button("Reset chat"):
     st.session_state.pop("messages", None)
 
@@ -68,14 +81,18 @@ if prompt := st.chat_input("Ask me something..."):
     y_pred = model.predict(X_new, verbose=0)
     predicted_tag = tags[np.argmax(y_pred)]
     tag_probability = y_pred[0][np.argmax(y_pred)]
-    print(predicted_tag, tag_probability)
 
     response, image = generate_response(predicted_tag, tag_probability, intents, data)
 
     with st.chat_message("assistant"):
-        st.write(response)
+        st.write_stream(stream_response(response))
+    
         if image is not None:
             displayed_image = Image.open(image)
             st.image(displayed_image)
-            
+
+        if (tag_probability >= 0.75):
+            color = get_color_confidence(tag_probability)
+            st.markdown(f"<small style='color:{color}; font-weight:bold;'>Confidence Level: {tag_probability*100:.2f}%</small>", unsafe_allow_html=True)   
+
     st.session_state.messages.append({"role": "assistant", "content": response, "image": image})

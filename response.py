@@ -1,57 +1,83 @@
 import random
 import json
+import streamlit as st
 from datetime import datetime
 
 # Generate response
-def generate_response(tag, tag_prob, intents):
+def generate_response(tag, tag_prob, intents, data):
     if tag_prob > 0.75:
         for intent in intents['intents']:
             if intent['tag'] == tag:
                 responses = intent['responses']
                 selected_response = random.choice(responses)
 
-                # Handle the responses that contain images
-                # Route
-                if (tag == "route"):
-                    return selected_response, "images/Routes.png"
-                if (tag == "route AB"):
-                    return selected_response, "images/Route_AB.png"
-                if (tag == "route BA"):
-                    return selected_response, "images/Route_BA.png"
-                if (tag == "route C"):
-                    return selected_response, "images/Route_C.png"
-                if (tag == "route D"):
-                    return selected_response, "images/Route_D.png"
-                if (tag == "route E"):
-                    return selected_response, "images/Route_E.png"
-                if (tag == "route 13"):
-                    return selected_response, "images/Route_13.png"
-                
-                # Schedule
-                if (tag == "schedule"):
-                    return selected_response, "images/Schedule.png"
-                if (tag == "schedule/frequency for bus AB" or tag == "schedule/frequency for bus BA" or tag == "schedule/frequency for bus E"):
-                    return selected_response, "images/Schedule_AB_BA_E.png"
-                if (tag == "schedule/frequency for bus C"):
-                    return selected_response, "images/Schedule_C.png"
-                if (tag == "schedule/frequency for bus D"):
-                    return selected_response, "images/Schedule_D.png"
-                if (tag == "schedule/frequency for bus 13"):
-                    return selected_response, "images/Schedule_13.png"
+                # Handle the responses
+                match tag:
+                    # Route
+                    case "route":
+                        return selected_response, "images/Routes.png"
+                    case "route AB":
+                        return selected_response, "images/Route_AB.png"
+                    case "route BA":
+                        return selected_response, "images/Route_BA.png"
+                    case "route C":
+                        return selected_response, "images/Route_C.png"
+                    case "route D":
+                        return selected_response, "images/Route_D.png"
+                    case "route E":
+                        return selected_response, "images/Route_E.png"
+                    case "route 13":
+                        return selected_response, "images/Route_13.png"
+                    # Schedule
+                    case "schedule":
+                        return selected_response, "images/Schedule.png"
+                    case "schedule AB":
+                        return selected_response, "images/Schedule_AB.png"
+                    case "schedule BA":
+                        return selected_response, "images/Schedule_BA.png"
+                    case "schedule C":
+                        return selected_response, "images/Schedule_C.png"
+                    case "schedule D":
+                        return selected_response, "images/Schedule_D.png"
+                    case "schedule E":
+                        return selected_response, "images/Schedule_E.png"
+                    case "schedule 13":
+                        return selected_response, "images/Schedule_13.png"
+                    # Next and previous bus times
+                    case "next/previous bus for route AB":
+                        return handle_next_previous_bus("AB", data, selected_response)
+                    case "next/previous bus for route BA":
+                        return handle_next_previous_bus("BA", data, selected_response)
+                    case "next/previous bus for route C":
+                        return handle_next_previous_bus("C", data, selected_response)
+                    case "next/previous bus for route D":
+                        return handle_next_previous_bus("D", data, selected_response)
+                    case "next/previous bus for route E":
+                        return handle_next_previous_bus("E", data, selected_response)
+                    case "next/previous bus for route 13":
+                        return handle_next_previous_bus("13", data, selected_response)
+                    # Destinations
+                    case "UM CENTRAL":
+                        return get_routes_for_destination("UM CENTRAL", selected_response, data)
+                    case "KK13":
+                        return get_routes_for_destination("KK13", selected_response, data)
+                    case "KK8":
+                        return get_routes_for_destination("KK8", selected_response, data)
+                    case "KK5":
+                        return get_routes_for_destination("KK5", selected_response, data)
+                    case "INTERNATIONAL HOUSE":
+                        return get_routes_for_destination("INTERNATIONAL HOUSE", selected_response, data)
+                    case "FACULTY OF ENGINEERING":
+                        return get_routes_for_destination("FACULTY OF ENGINEERING", selected_response, data)
+                    case "FACULTY OF SCIENCE":
+                        return get_routes_for_destination("FACULTY OF SCIENCE", selected_response, data)
+                    case "ACADEMY OF ISLAM STUDIES":
+                        return get_routes_for_destination("ACADEMY OF ISLAM STUDIES", selected_response, data)
+                    case "ACADEMY OF MALAY STUDIES":
+                        return get_routes_for_destination("ACADEMY OF MALAY STUDIES", selected_response, data)
+                    case "BANGSAR SOUTH":
+                        return get_routes_for_destination("BANGSAR SOUTH", selected_response, data)
 
-                # Next and previous bus times
-                if (tag == "next/previous bus for route AB"):
-                    return handle_next_previous_bus("AB", selected_response)
-                if (tag == "next/previous bus for route BA"):
-                    return handle_next_previous_bus("BA", selected_response)
-                if (tag == "next/previous bus for route C"):
-                    return handle_next_previous_bus("C", selected_response)
-                if (tag == "next/previous bus for route D"):
-                    return handle_next_previous_bus("D", selected_response)
-                if (tag == "next/previous bus for route E"):
-                    return handle_next_previous_bus("E", selected_response)
-                if (tag == "next/previous bus for route 13"):
-                    return handle_next_previous_bus("13", selected_response)
                 
                 return selected_response, None
                 
@@ -59,21 +85,18 @@ def generate_response(tag, tag_prob, intents):
     else:
         return "I'm sorry, I don't understand. Please try again.", None
 
-def handle_next_previous_bus(selected_route, selected_response):
+def handle_next_previous_bus(selected_route, data, selected_response):
     # Get current time
     now = datetime.now()
     current_time = now.strftime("%H:%M")
 
-    with open('data.json') as data:
-        schedule = json.load(data)
-
-    for route in schedule['routes']:
+    for route in data['routes']:
         if route['route name'] == selected_route:
             next_bus_time = get_next_bus(current_time, route['arrival times'])
             previous_bus_time = get_previous_bus(current_time, route['arrival times'])
                 
             selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
-            return selected_response, None
+    return selected_response, None
 
 def get_next_bus(current_time, arrival_times):
     format = "%H:%M"
@@ -94,3 +117,14 @@ def get_previous_bus(current_time, arrival_times):
         if time < current_time:
             return time.strftime(format)
     return arrival_times[-1]
+
+def get_routes_for_destination(destination, selected_response, data):
+    routes = []
+    for route in data['routes']:
+        for stop in route['stops']:
+            if stop.lower() == destination.lower() or destination.lower() in stop.lower():
+                routes.append(route['route name'])
+                break
+    
+    selected_response = selected_response + ', '.join(routes)
+    return selected_response, None

@@ -9,53 +9,46 @@ from PIL import Image
 from response import generate_response
 from keras.models import load_model
 from nlp_utils import bag_of_words, preprocess_text
+import time
 
-@st.cache_data
-def load_intents():
+st.set_page_config(page_title="UM Shuttle Bus Chatbot", page_icon="🚌")
+
+@st.cache_resource()
+def load_data_and_model():
     with open('intents.json') as data:
         intents = json.load(data)
-    return intents
 
-@st.cache_data
-def load_words_and_tags():
+    with open('data.json') as data:
+        data = json.load(data)
+    
     all_words = []
     tags = []
-    # loop through each sentence in our intents patterns
     for intent in intents['intents']:
         tag = intent['tag']
-        # add to tag list
         tags.append(tag)
         for pattern in intent['patterns']:
-            # text preprocessing
             words = preprocess_text(pattern)
-            # add to our words list
             all_words.extend(words)
 
-    # remove duplicates and sort
     all_words = sorted(set(all_words))
     tags = sorted(set(tags))
 
-    return all_words, tags
-
-@st.cache_resource()
-def load_model_once():
-    print("hi")
     model = load_model('lstm_model.h5')
-    return model
 
-# Load the model
-model = load_model_once()
+    return intents, data, all_words, tags, model
 
-intents = load_intents()
-all_words, tags = load_words_and_tags()
+intents, data, all_words, tags, model = load_data_and_model()
 
+# Streamlit UI
+st.title("🤖 UM Shuttle Bus Chatbot")
+st.write("-----------\n\n")
 
-
-st.title("UM Shuttle Bus Chatbot")
-st.button("Reset chat", on_click=lambda: st.session_state.pop("messages", None))
+# Reset chat button
+if st.sidebar.button("Reset chat"):
+    st.session_state.pop("messages", None)
 
 if "messages" not in st.session_state:
-    st.session_state.messages = []
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -77,11 +70,12 @@ if prompt := st.chat_input("Ask me something..."):
     tag_probability = y_pred[0][np.argmax(y_pred)]
     print(predicted_tag, tag_probability)
 
-    response, image = generate_response(predicted_tag, tag_probability, intents)
+    response, image = generate_response(predicted_tag, tag_probability, intents, data)
 
     with st.chat_message("assistant"):
-        st.markdown(response)
+        st.write(response)
         if image is not None:
             displayed_image = Image.open(image)
             st.image(displayed_image)
+            
     st.session_state.messages.append({"role": "assistant", "content": response, "image": image})

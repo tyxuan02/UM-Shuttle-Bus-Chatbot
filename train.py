@@ -7,9 +7,8 @@ import json
 
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
+from keras.layers import Dropout
 from keras import optimizers, losses
-from keras import layers
-import tensorflow as tf
 
 from nlp_utils import bag_of_words, preprocess_text
 
@@ -55,24 +54,33 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 200
+num_epochs = 100
 batch_size = 8
 learning_rate = 0.001
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 64
 output_size = len(tags)
 print(input_size, output_size)
 
 model = Sequential([
     Dense(hidden_size, activation='relu', input_shape=(input_size,)),
+    Dropout(0.5),
     Dense(hidden_size, activation='relu'),
+    Dropout(0.5),
     Dense(output_size, activation='softmax')
 ])
 
 model.compile(optimizer=optimizers.Adam(learning_rate=learning_rate), loss=losses.SparseCategoricalCrossentropy(), metrics=['accuracy'])
 
 # Fit the model
-model.fit(X_train, y_train, epochs=num_epochs, batch_size=batch_size)
+history = model.fit(X_train, y_train, epochs=num_epochs, batch_size=batch_size)
+
+# Get the accuracy and loss of the model
+accuracy = history.history['accuracy'][-1]
+loss = history.history['loss'][-1]
+
+print(f"Accuracy: {accuracy:.2f}")
+print(f"Loss: {loss:.2f}")
 
 # Save the model and training data
 model.save('lstm_model.h5')

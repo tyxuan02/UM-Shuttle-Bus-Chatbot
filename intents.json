@@ -10,7 +10,22 @@
                 "Is anyone there?",
                 "Hello",
                 "Good day",
-                "Whats up"
+                "Whats up",
+                "Hello there",
+                "Greetings",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Hey there",
+                "Yo",
+                "Sup",
+                "Hey dude",
+                "Hey man",
+                "Hiya",
+                "Hiya there",
+                "Hey, how's it going?",
+                "Hey, what's up?",
+                "Hey, how are you doing?"
             ],
             "responses": [
                 "Hey :-) I'm UM Shuttle Bus Chatbot. How can I help you?",
@@ -24,7 +39,26 @@
                 "Bye",
                 "See you later",
                 "Goodbye",
-                "Have a nice day"
+                "Have a nice day",
+                "Peace out",
+                "Bye for now",
+                "Good night",
+                "See you soon",
+                "So long",
+                "Bye-bye",
+                "Gotta go",
+                "Have a great day",
+                "Farewell",
+                "It was a pleasure speaking with you.",
+                "Take care.",
+                "All the best.",
+                "Best regards.",
+                "Catch you later!",
+                "Later dude!",
+                "Talk to you soon!",
+                "Peace out!",
+                "See ya!",
+                "I'm outta here!"
             ],
             "responses": [
                 "Bye",
@@ -41,7 +75,24 @@
                 "Thank you",
                 "That's helpful",
                 "Thank's a lot!",
-                "Thankiu"
+                "Thankiu",
+                "I appreciate it",
+                "You're awesome!",
+                "That's great!",
+                "Glad to hear it helped!",
+                "Appreciate it",
+                "Much obliged",
+                "Thanks a bunch",
+                "Thank you very much",
+                "Thanks for your assistance",
+                "Thanks for the help",
+                "Thanks for that",
+                "Thanks a ton",
+                "Thanks so much",
+                "You're a lifesaver",
+                "You're the best",
+                "You're awesome",
+                "Thank you, I appreciate it"
             ],
             "responses": [
                 "Happy to help!",
@@ -56,7 +107,18 @@
                 "What is your name?",
                 "What should I call you?",
                 "Do you have a name?",
-                "Name"
+                "Your name",
+                "Who are you?",
+                "What do you go by?",
+                "What do you call yourself?",
+                "Your name?",
+                "Are you named?",
+                "What's your name?",
+                "How do you introduce yourself?",
+                "What shall I call you?",
+                "Can you tell me your name?",
+                "What are you called?",
+                "Do you have any name?"
             ],
             "responses": [
                 "You can call me UM Shuttle Bus Chatbot.",
@@ -78,10 +140,13 @@
                 "How many paths does the bus have?",
                 "Can you show me the route for each bus?",
                 "Where are the shuttle bus stops located?",
-                "Where are the shuttle bus stops?"
+                "Where are the shuttle bus stops?",
+                "How many routes are there for the UM shuttle bus service?"
             ],
             "responses": [
-                "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle bus service. Here is the UM shuttle bus service route:"
+                "There are 6 routes (AB, BA, C, D, E and 13) for the UM shuttle bus service. Here is the UM shuttle bus routes:",
+                "The UM shuttle bus service operates on 6 routes: AB, BA, C, D, E, and 13. Here is the UM shuttle bus routes:",
+                "The UM shuttle bus service has 6 routes: AB, BA, C, D, E, and 13. Here is the UM shuttle bus routes:"
             ]
         },
         {
@@ -92,13 +157,16 @@
                 "Where can I find the route for bus AB?",
                 "Bus AB route",
                 "Bus AB path",
+                "Bus AB road",
                 "Starting point for bus AB",
                 "Ending point for bus AB",
                 "Bus AB stops",
                 "Bus AB locations",
                 "Route AB",
                 "Where are the shuttle bus stops for route AB?",
-                "Where are the shuttle bus stops for bus AB?"
+                "Where are the shuttle bus stops for bus AB?",
+                "What is the route of bus AB?",
+                "Which locations does bus AB cover?"
             ],
             "responses": [
                 "The starting and ending points for route AB are at UM Central. Here is the route AB:",
@@ -113,13 +181,16 @@
                 "Where can I find the route for bus BA?",
                 "Bus BA route",
                 "Bus BA path",
+                "Bus BA road",
                 "Starting point for bus BA",
                 "Ending point for bus BA",
                 "Bus BA stops",
                 "Bus BA locations",
                 "Route BA",
                 "Where are the shuttle bus stops for route BA?",
-                "Where are the shuttle bus stops for bus BA?"
+                "Where are the shuttle bus stops for bus BA?",
+                "What is the route of bus BA?",
+                "Which locations does bus BA cover?"
             ],
             "responses": [
                 "The starting and ending points for route BA are at UM Central. Here is the route BA:" ,
@@ -134,13 +205,16 @@
                 "Where can I find the route for bus C?",
                 "Bus C route",
                 "Bus C path",
+                "Bus C road",
                 "Starting point for bus C",
                 "Ending point for bus C",
                 "Bus C stops",
                 "Bus C locations",
                 "Route C",
                 "Where are the shuttle bus stops for route C?",
-                "Where are the shuttle bus stops for bus C?"
+                "Where are the shuttle bus stops for bus C?",
+                "What is the route of bus C?",
+                "Which locations does bus C cover?"
             ],
             "responses": [
                 "The starting point for route C for the first five trips is at Pantai Permai, while the starting point for trips after 09:30 is at UM Central. The ending point for route C is at UM Central. Here is route C:",
@@ -155,13 +229,16 @@
                 "Where can I find the route for bus D?",
                 "Bus D route",
                 "Bus D path",
+                "Bus D road",
                 "Starting point for bus D",
                 "Ending point for bus D",
                 "Bus D stops",
                 "Bus D locations",
                 "Route D",
                 "Where are the shuttle bus stops for route D?",
-                "Where are the shuttle bus stops for bus D?"
+                "Where are the shuttle bus stops for bus D?",
+                "What is the route of bus D?",
+                "Which locations does bus D cover?"
             ],
             "responses": [
                 "The starting point for route D for the first five trips is at International House, while the starting point for trips after 09:30 is at Faculty of Engineering (Corner bus stop to PJ gate). The ending point for route D is at UM Central. Here is route D:",
@@ -176,13 +253,16 @@
                 "Where can I find the route for bus E?",
                 "Bus E route",
                 "Bus E path",
+                "Bus E road",
                 "Starting point for bus E",
                 "Ending point for bus E",
                 "Bus E stops",
                 "Bus E locations",
                 "Route E",
                 "Where are the shuttle bus stops for route E?",
-                "Where are the shuttle bus stops for bus E?"
+                "Where are the shuttle bus stops for bus E?",
+                "What is the route of bus E?",
+                "Which locations does bus E cover?"
             ],
             "responses": [
                 "The starting and ending points for route E are at UM Central. Here is the route E:" ,
@@ -197,13 +277,16 @@
                 "Where can I find the route for bus 13?",
                 "Bus 13 route",
                 "Bus 13 path",
+                "Bus 13 road",
                 "Starting point for bus 13",
                 "Ending point for bus 13",
                 "Bus 13 stops",
                 "Bus 13 locations",
                 "Route 13",
                 "Where are the shuttle bus stops for route 13?",
-                "Where are the shuttle bus stops for bus 13?"
+                "Where are the shuttle bus stops for bus 13?",
+                "What is the route of bus 13?",
+                "Which locations does bus 13 cover?"
             ],
             "responses": [
                 "The starting point for route 13 for the first five trips is at 13th RESIDENTIAL COLLEGE (KK13), while the starting point for trips after 09:30 is at Faculty of Engineering (Corner bus stop to PJ gate). The ending point for route D is at UM Central. Here is route 13:",
@@ -224,7 +307,9 @@
                 "Schedule"
             ],
             "responses": [
-                "Here is the bus schedule:"
+                "Here is the bus schedule:",
+                "The bus schedule is as follows:",
+                "The bus schedule is available here:"
             ]
         },
         {
@@ -234,16 +319,30 @@
                 "What is the frequency of the bus?",
                 "Can you tell me how often the bus comes?",
                 "Bus frequency",
-                "Bus interval",
                 "What time does shuttle buses start?",
                 "What time does shuttle buses end?",
                 "Operating hours for shuttle buses",
                 "Shuttle buses operating hours",
                 "What time does shuttle buses start operating?",
-                "What time does shuttle buses stop operating?"
+                "What time does shuttle buses stop operating?",
+                "How frequent are the shuttle buses?",
+                "What's the shuttle bus frequency?",
+                "When do the shuttle buses start running?",
+                "When do the shuttle buses stop running?",
+                "What are the operating hours of the shuttle buses?",
+                "What time do the shuttle buses begin operating?",
+                "What time do the shuttle buses cease operating?",
+                "At what time do the shuttle buses start?",
+                "At what time do the shuttle buses end?",
+                "How often do the shuttle buses come?",
+                "What is the shuttle service frequency?",
+                "When does the shuttle service start?",
+                "When does the shuttle service end?"
             ],
             "responses": [
-                "UM shuttles buses operate from 7:30 AM to 10:00 PM. There are 25-26 trips per day depending on the bus route. You can check the schedule for each bus route for more information by asking \" What is the schedule for bus {route name}?\"."
+                "UM shuttles buses operate from 7:30 AM to 10:00 PM. There are 25-26 trips per day depending on the bus route. You can check the schedule for each bus route for more information by asking \" What is the schedule for bus {route name}?\".",
+                "The UM shuttle service runs between 7:30 AM and 10:00 PM, offering 25 to 26 journeys daily, varying by the specific bus route. For detailed timings of each route, inquire with \"What is the schedule for bus {route name}?\" for precise information.",
+                "The shuttle buses operate from 7:30 AM to 10:00 PM, with 25-26 trips per day depending on the bus route. You can find the schedule for each bus route by asking \"What is the schedule for bus {route name}?\"."
             ]
         },
         {
@@ -460,10 +559,15 @@
                 "Next bus for route AB",
                 "Previous bus for route AB",
                 "Next bus AB",
-                "Previous bus AB"
+                "Previous bus AB",
+                "When does the next bus for route AB arrive?",
+                "When did the previous bus for route AB depart?",
+                "Next shuttle for route AB",
+                "Previous shuttle for route AB"
             ],
             "responses": [
-                "The next trip for route AB is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route AB is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route AB is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -476,10 +580,15 @@
                 "Next bus for route BA",
                 "Previous bus for route BA",
                 "Next bus BA",
-                "Previous bus BA"
+                "Previous bus BA",
+                "When does the next bus for route BA arrive?",
+                "When did the previous bus for route BA depart?",
+                "Next shuttle for route BA",
+                "Previous shuttle for route BA"
             ],
             "responses": [
-                "The next trip for route BA is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route BA is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route BA is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -492,10 +601,15 @@
                 "Next bus for route C",
                 "Previous bus for route C",
                 "Next bus C",
-                "Previous bus C"
+                "Previous bus C",
+                "When does the next bus for route C arrive?",
+                "When did the previous bus for route C depart?",
+                "Next shuttle for route C",
+                "Previous shuttle for route C"
             ],
             "responses": [
-                "The next trip for route C is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route C is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route C is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -508,10 +622,15 @@
                 "Next bus for route D",
                 "Previous bus for route D",
                 "Next bus D",
-                "Previous bus D"
+                "Previous bus D",
+                "When does the next bus for route D arrive?",
+                "When did the previous bus for route D depart?",
+                "Next shuttle for route D",
+                "Previous shuttle for route D"
             ],
             "responses": [
-                "The next trip for route D is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route D is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route D is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -524,10 +643,14 @@
                 "Next bus for route E",
                 "Previous bus for route E",
                 "Next bus E",
-                "Previous bus E"
+                "Previous bus E",
+                "When does the next bus for route E arrive?",
+                "Next shuttle for route E",
+                "Previous shuttle for route E"
             ],
             "responses": [
-                "The next trip for route E is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route E is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route E is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -540,10 +663,15 @@
                 "Next bus for route 13",
                 "Previous bus for route 13",
                 "Next bus 13",
-                "Previous bus 13"
+                "Previous bus 13",
+                "When does the next bus for route 13 arrive?",
+                "When did the previous bus for route 13 depart?",
+                "Next shuttle for route 13",
+                "Previous shuttle for route 13"
             ],
             "responses": [
-                "The next trip for route 13 is at {next bus time} and the previous trip was at {previous bus time}."
+                "The next trip for route 13 is at {next bus time} and the previous trip was at {previous bus time}.",
+                "The upcoming departure for bus route 13 is scheduled for {next bus time}, while the last departure occurred at {previous bus time}."
             ]
         },
         {
@@ -561,7 +689,30 @@
                 "What days does the bus not operate?",
                 "Bus non-operating days",
                 "Bus off days",
-                "Does the bus operate during Friday Prayer?"
+                "Does the bus operate during Friday Prayer?",
+                "Does the bus run on Saturdays and Sundays?",
+                "Does the bus run on weekdays or weekends?",
+                "Is the bus operational on public holidays?",
+                "Does the bus run on Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, and Sundays?",
+                "When is the bus not in operation?",
+                "Days when the bus does not operate",
+                "Bus off-days",
+                "Does the bus run during Friday prayer time?",
+                "Can I take the bus on weekends?",
+                "Can I take the bus on weekdays?",
+                "Can I take the bus on public holidays?",
+                "Can I take the bus on Mondays, Tuesdays, Wednesdays, Thursdays, Fridays, Saturdays, Sundays?",
+                "Can I take the bus during Friday prayer?",
+                "Does the bus operate every day?",
+                "Does the bus run daily?",
+                "Is the bus available every day?",
+                "Is the bus operational daily?",
+                "Is the bus in service every day?",
+                "Is the bus running daily?",
+                "Is the bus running every day?",
+                "Friday prayer bus operation",
+                "Bus operation during Friday prayer",
+                "Bus operation on Fridays"
             ],
             "responses": [
                 "The bus operates every day except during Friday prayer (12.30 PM - 2.30 PM), weekends and public holidays.",
@@ -576,10 +727,25 @@
                 "Can I bring food or drink on the bus?",
                 "Food and drink on the bus",
                 "Can I eat on the bus",
-                "Can I drink on the bus"
+                "Can I drink on the bus",
+                "Can I consume food or drinks on the bus",
+                "Is food or drink allowed on the bus?",
+                "What are the rules for eating or drinking on the bus?",
+                "Are there any regulations regarding food or drink on the bus?",
+                "Food and drink policy on the bus",
+                "Can I consume food or beverages while traveling on the bus?",
+                "Is it permissible to bring snacks or beverages on the bus?",
+                "Are snacks or drinks permitted during the bus ride?",
+                "Can I have a snack or drink during the bus journey?",
+                "Can I eat or drink while on the bus?",
+                "Can I have a snack or drink on the bus?",
+                "Can I consume food or beverages while on the bus?",
+                "Can I bring food or drinks to the bus?"
             ],
             "responses": [
-                "Food and drinks are not allowed on the bus."
+                "Food and drinks are not allowed on the bus.",
+                "Eating and drinking are not permitted on the bus.",
+                "Consuming food and drinks is prohibited on the bus."
             ]
         },
         {
@@ -597,29 +763,97 @@
                 "Can UM lecturers use the shuttle bus service?",
                 "Can UM employees use the shuttle bus service?",
                 "Can UM visitors use the shuttle bus service?",
-                "Can UM guests use the shuttle bus service?"
+                "Can UM guests use the shuttle bus service?",
+                "Who is permitted to ride the shuttle buses?",
+                "Can students use the shuttle buses?",
+                "Can UM staff members use the shuttle buses?",
+                "Who has access to the shuttle bus service?",
+                "Who has the privilege of using the shuttle buses?",
+                "Are UM foundation students allowed to use the shuttle bus service?",
+                "Can lecturers utilize the shuttle bus service?",
+                "Are UM employees eligible for the shuttle bus service?",
+                "Can UM visitors or guests use the shuttle bus service?",
+                "What are the requirements for using the shuttle buses?",
+                "Who is entitled to ride the shuttle buses?",
+                "Can non-university individuals use the shuttle bus service?",
+                "I am a UM student, can I use the shuttle bus service?",
+                "I am a UM staff member, can I use the shuttle bus service?",
+                "I am a UM lecturer, can I use the shuttle bus service?",
+                "I am a UM student, can I use the bus?",
+                "I am a UM staff member, can I use the bus?",
+                "I am a UM lecturer, can I use the bus?",
+                "I am a UM student, can I take the bus?",
+                "I am a UM staff member, can I take the bus?",
+                "Can UM students take the bus?",
+                "I am a UM lecturer, can I take the bus?",
+                "Can students ride the shuttle buses?",
+                "Can UM staff members ride the shuttle buses?",
+                "Can UM lecturers ride the shuttle buses?",
+                "Can University of Malaya students use the shuttle bus service?",
+                "Can University of Malaya staff use the shuttle bus service?",
+                "Can University of Malaya lecturers use the shuttle bus service?",
+                "University of Malaya shuttle bus eligibility",
+                "Are University of Malaya students allowed to use the shuttle bus service?",
+                "Are University of Malaya staff members allowed to use the shuttle bus service?",
+                "Are University of Malaya lecturers allowed to use the shuttle bus service?",
+                "Who is authorized to use the shuttle buses?",
+                "Who is permitted to use the shuttle buses?",
+                "Who is allowed to use the shuttle buses?",
+                "I am a University of Malaya student, can I use the shuttle bus service?",
+                "I am a University of Malaya staff member, can I use the shuttle bus service?",
+                "I am a University of Malaya lecturer, can I use the shuttle bus service?"
             ],
             "responses": [
-                "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of UM students (not including UM foundation students) and staff only."
+                "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of UM students (not including UM foundation students - PASUM) and staff only.",
+                "The bus permit provided by Malaysia's Land Public Transport Agency is exclusively for the transportation of University of Malaya students, excluding those enrolled in the foundation program (PASUM), and university staff."
             ]           
         },
         {
             "tag": "student card",
             "patterns": [
-                "Do I need to have a UM student card to take the shuttle buses?",
-                "Is a UM student card required to take the shuttle buses?",
-                "Do I need to show my UM student card to take the shuttle buses?",
-                "What do I need to bring to take the shuttle buses?",
-                "How much does it cost to take the shuttle buses?",
-                "Is there a fee for using the shuttle buses?",
-                "Is there a charge for using the shuttle buses?",
-                "Do I need to pay to take the shuttle buses?",
-                "Do I need to pay to use the shuttle buses?",
-                "Do I need to pay to ride the shuttle buses?",
-                "Is the shuttle bus service free?"
+                "Do I need to have a UM student card to take the shuttle bus?",
+                "Is a UM student card required to take the shuttle bus?",
+                "Do I need to show my UM student card to take the shuttle bus?",
+                "What do I need to bring to take the shuttle bus?",
+                "How much does it cost to take the shuttle bus?",
+                "Is there a fee for using the shuttle bus?",
+                "Is there a charge for using the shuttle bus?",
+                "Do I need to pay to take the shuttle bus?",
+                "Do I need to pay to use the shuttle bus?",
+                "Do I need to pay to ride the shuttle bus?",
+                "Is the shuttle bus service free?",
+                "Is a UM student card necessary for shuttle bus access?",
+                "What documentation is required for shuttle bus access?",
+                "What is needed to use the shuttle bus?",
+                "Do I need my UM student ID for the shuttle bus?",
+                "What form of identification do I need for the shuttle bus?",
+                "Is there any documentation required to ride the shuttle bus?",
+                "Is there a specific card needed for the shuttle bus?",
+                "What do I need to show to ride the shuttle bus?",
+                "Can I use my UM student card for the shuttle bus?",
+                "Is there any proof required for shuttle bus access?",
+                "Are UM staff required to show identification for the shuttle bus?",
+                "Is there a fee for shuttle bus access?",
+                "What is the payment method for the shuttle bus?",
+                "Do I need to register for shuttle bus access?",
+                "Anything to bring before boarding the shuttle bus?",
+                "Is there a charge for the shuttle bus service?",
+                "What should I bring to take the shuttle bus?",
+                "What should I present to take the shuttle bus?",
+                "Anything to show before boarding the shuttle bus?",
+                "University of Malaya student card",
+                "University of Malaya student ID",
+                "UM student card",
+                "UM student ID",
+                "I am a University of Malaya student, do I need to show my student card to take the shuttle bus?",
+                "I am a University of Malaya student, do I need to show my student ID to take the shuttle bus?",
+                "I am a UM student, do I need to show my student card to take the shuttle bus?",
+                "I am a UM student, do I need to show my student ID to take the shuttle bus?"
             ],
             "responses": [
-                "The shuttle bus service is free for UM students and staff. You need either a UM student card or an offer letter for those who have not yet obtained a UM student card."
+                "The shuttle bus service is free for UM students and staff. You need either a UM student card or an offer letter for those who have not yet obtained a UM student card.",
+                "The University of Malaya provides a complimentary shuttle bus service for its students and staff members. To access this service, individuals are required to present a valid University of Malaya student identification card. In the case of new students who have not yet received their student ID card, a copy of the offer letter will suffice.",
+                "The University of Malaya offers a free shuttle bus service for both students and staff. To use this service, one must show a valid University of Malaya student ID card. However, new students awaiting their student ID card can use their offer letter as a temporary proof of identification to access the shuttle service."
             ]
         },
         {
@@ -630,10 +864,28 @@
                 "How can I provide feedback or suggestions on the shuttle bus service?",
                 "How can I make an inquiry about the shuttle bus service?",
                 "Who should I contact for shuttle bus inquiries?",
-                "Who should I contact for shuttle bus feedback or suggestions?"
+                "Who should I contact for shuttle bus feedback or suggestions?",
+                "I lost something on the shuttle bus. What should I do?",
+                "How do I report lost items on the shuttle bus?",
+                "Is there a lost and found service for the shuttle buses?",
+                "Who do I contact for lost belongings on the shuttle bus?",
+                "How can I report a problem with the shuttle bus service?",
+                "What's the procedure for providing feedback on the shuttle buses?",
+                "Where can I submit suggestions for improving the shuttle bus service?",
+                "Is there a way to provide feedback on the shuttle bus experience?",
+                "How do I make a complaint about the shuttle bus service?",
+                "Who can I reach out to for shuttle bus-related concerns?",
+                "How do I get assistance with shuttle bus issues?",
+                "Where can I drop my feedback on the shuttle bus service?",
+                "How can I share my thoughts on the shuttle bus service?",
+                "How can I drop my suggestions for the shuttle bus service?",
+                "How can I provide feedback on the shuttle bus service?",
+                "How can I give my feedback on the shuttle bus service?",
+                "How can I give my suggestions on the shuttle bus service?"
             ],
             "responses": [
-                "You can email kenderaanjpphb@um.edu.my or submit it on the UM helpdesk."
+                "You can email kenderaanjpphb@um.edu.my or submit it on the UM helpdesk.",
+                "You have the option to send your inquiry to kenderaanjpphb@um.edu.my or alternatively, you may choose to address your concerns through the UM support desk."
             ]
         },
         {
@@ -643,10 +895,28 @@
                 "Are there any specific guidelines for using the shuttle bus service?",
                 "Can you tell me the guidelines for riding the shuttle buses?",
                 "What are the rules for riding the shuttle buses?",
-                "What are the regulations for riding the shuttle buses?"
+                "What are the regulations for riding the shuttle buses?",
+                "What are the requirements for using the shuttle bus service?",
+                "Can you explain the rules for riding the shuttle buses?",
+                "Are there any instructions for using the shuttle bus service?",
+                "What should I know before riding the shuttle buses?",
+                "Do you have any guidelines for shuttle bus passengers?",
+                "What are the dos and don'ts of using the shuttle bus service?",
+                "Is there a code of conduct for shuttle bus users?",
+                "Can you provide information on shuttle bus etiquette?",
+                "Are there any specific protocols for shuttle bus riders?",
+                "What is the protocol for using the shuttle bus service?",
+                "What are the dos and don'ts of riding the shuttle buses?",
+                "What are the rules and regulations for using the shuttle bus service?",
+                "What are the guidelines for using the shuttle bus service?",
+                "What are the rules for using the shuttle bus service?",
+                "What are the regulations for using the shuttle bus service?",
+                "What are the requirements for using the shuttle bus service?",
+                "Any rules or guidelines or regulations?"
             ],
             "responses": [
-                "Guidelines for using the UM shuttle bus service:\n- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus" 
+                "Guidelines for using the UM shuttle bus service:\n- Must show UM student card to the bus driver.\n- Only UM students and staff can use the shuttle bus service.\n- Must queue when boarding and alighting the bus",
+                "To utilize the University of Malaya's shuttle bus service, it is mandatory for passengers to present their UM student identification card upon entering the bus. This service is exclusively available to the university's students and staff members. Additionally, it is required to form an orderly line while getting on and off the bus to ensure a smooth and efficient transportation experience for all."
             ]
         },
         {
@@ -656,10 +926,29 @@
                 "Can I use the shuttle bus for a special event?",
                 "Can I rent the shuttle bus for a special event?",
                 "Can I reserve the shuttle bus for a special event?",
-                "If there is an event that requires the use of the bus, how should I make reservations?"
+                "If there is an event that requires the use of the bus, how should I make reservations?",
+                "How can I arrange for the shuttle bus for a special occasion?",
+                "Is it possible to reserve the shuttle bus for a private event?",
+                "Can I request the shuttle bus for an event?",
+                "What's the process for using the shuttle bus for special occasions?",
+                "If I need the shuttle bus for an event, what should I do?",
+                "Are there provisions for using the shuttle bus for special events?",
+                "Can I hire the shuttle bus for a function?",
+                "Who should I contact to book the shuttle bus for an event?",
+                "Is there a procedure for reserving the shuttle bus for special occasions?",
+                "How do I arrange transportation for an event using the shuttle bus?",
+                "Can I book the shuttle bus for a special occasion?",
+                "Can I reserve the shuttle bus for a special occasion?",
+                "Can I rent the shuttle bus for a special occasion?",
+                "Can I use the shuttle bus for a special occasion?",
+                "Can I book the shuttle bus for a special event?",
+                "Can I reserve the shuttle bus for a special event?",
+                "Can I rent the bus for a special event?"
+
             ],
             "responses": [
-                "You can email your request to kenderaanjpphb@um.edu.my to make a reservation for the shuttle bus for a special event."
+                "You can email your request to kenderaanjpphb@um.edu.my to make a reservation for the shuttle bus for a special event.",
+                "To book the shuttle bus for a special event, please send your request and reservation details to the email address kenderaanjpphb@um.edu.my."
             ]
         },
         {
@@ -668,10 +957,24 @@
                 "Can UM foundation students use the shuttle bus service?",
                 "Are UM foundation students allowed to use the shuttle bus service?",
                 "Can UM foundation students take the shuttle buses?",
-                "Can UM foundation students ride the shuttle buses?"
+                "Can UM foundation students ride the shuttle buses?",
+                "Can PASUM students use the shuttle bus service?",
+                "Are PASUM students allowed to use the shuttle bus service?",
+                "Can PASUM students take the shuttle buses?",
+                "Can PASUM students ride the shuttle buses?",
+                "Do foundation students have access to the shuttle bus service?",
+                "Are foundation students permitted to use the shuttle buses?",
+                "Is the shuttle bus service available for foundation students?",
+                "Can foundation students use the shuttle buses?",
+                "Are PASUM students eligible for the shuttle bus service?",
+                "Are PASUM students allowed to use the shuttle buses?",
+                "Is the shuttle bus service open to PASUM students?",
+                "Can PASUM students utilize the shuttle buses?"
             ],
             "responses": [
-                "UM foundation students are not allowed to use the shuttle bus service, but they may be able to book a chartered bus for special events."
+                "UM foundation students (PASUM) are not allowed to use the shuttle bus service, but they may be able to book a chartered bus for special events.",
+                "Foundation students at UM (PASUM) are not permitted to utilize the regular shuttle bus services. However, for unique occasions, they have the option to arrange a private bus.",
+                "The shuttle bus service is not available for UM foundation students (PASUM), but they can request a chartered bus for special events."
             ]
         },
         {
@@ -680,11 +983,28 @@
                 "How long does the shuttle bus take to travel from one stop to another?",
                 "How long does the shuttle bus take to travel from the one point to the another point?",
                 "How long does the shuttle bus take from one stop to another?",
-                "How long does the shuttle bus take from the one point to the another point?"
+                "How long does the shuttle bus take from the one point to the another point?",
+                "How much time does it take for the shuttle bus to travel between stops?",
+                "What is the average travel time between shuttle bus stops?",
+                "How long is the shuttle bus ride between two points?",
+                "What is the typical duration for the shuttle bus journey between stops?",
+                "How long does it usually take for the shuttle bus to reach from one stop to another?",
+                "How long is the commute on the shuttle bus from one point to another?",
+                "Time interval between shuttle bus stops",
+                "Duration of shuttle bus journey between stops",
+                "Time taken for shuttle bus to travel between stops",
+                "Duration of shuttle bus ride between two points",
+                "Average travel time between shuttle bus points",
+                "Typical duration for shuttle bus journey between stops",
+                "Average time taken for shuttle bus to travel between two points",
+                "Average time taken for shuttle bus to travel between two stops",
+                "Average time taken for shuttle bus to travel from one stop to another",
+                "Average time taken for shuttle bus to travel from one point to another"
             ],
             "responses": [
-                "The duration of the shuttle bus journey from one stop to another is dependent on the traffic conditions, but it usually takes around 5-10 minutes.",
-                "The duration of the shuttle bus journey from one point to another is dependent on the traffic conditions, but it usually takes around 5-10 minutes."
+                "The duration of the shuttle bus journey from one stop to another is dependent on the traffic conditions, but it usually takes around 5 to 10 minutes.",
+                "The duration of the shuttle bus journey from one point to another is dependent on the traffic conditions, but it usually takes around 5 to 10 minutes.",
+                "The travel time for the shuttle bus between two stops varies with traffic, typically ranging from 5 to 10 minutes."
             ]
         },
         {
@@ -696,7 +1016,18 @@
                 "Can I know the location of the shuttle bus?",
                 "Can I know the current location of the shuttle bus?",
                 "Can I know the real-time location of the shuttle bus?",
-                "Can I know the live location of the shuttle bus?"
+                "Can I know the live location of the shuttle bus?",
+                "Is there a shuttle bus tracking system available?",
+                "How do I locate the shuttle bus?",
+                "Is there a method to find the shuttle bus?",
+                "Can I see the shuttle bus's current position?",
+                "Is there a way to know where the shuttle bus is?",
+                "How do I find out the shuttle bus's whereabouts?",
+                "Is there a system to check the shuttle bus's real-time location?",
+                "Can I track the shuttle bus's movement?",
+                "Can I track the shuttle bus's location?",
+                "Can I track the shuttle bus's whereabouts?",
+                "Can I track the shuttle bus's position?"
             ],
             "responses": [
                 "Sorry, the shuttle bus service does not provide real-time tracking of the shuttle buses at the moment.",
@@ -718,11 +1049,369 @@
                 "How can you help me?",
                 "Can you show me something",
                 "Can you provide information on something",
-                "Can you answer questions on something"
+                "Provide me information regarding the shuttle bus service",
+                "Information about the bus service",
+                "Information about the shuttle bus",
+                "Can you answer questions on something",
+                "Can you assist me with something",
+                "FAQ",
+                "Frequently asked questions",
+                "What are the frequently asked questions?",
+                "What are the common questions?",
+                "What are the common inquiries?",
+                "What kind of information can you provide?",
+                "What areas can you assist me with?",
+                "What subjects are you knowledgeable about?",
+                "What topics do you specialize in?",
+                "What subjects can you answer questions on?",
+                "What can you tell me about?",
+                "Is there anything specific you can help me with?",
+                "What kind of assistance can I expect from you?",
+                "Can you offer guidance on any particular topics?",
+                "What are your areas of expertise?",
+                "What topics are covered in your FAQ?",
+                "What questions do you typically answer?",
+                "What are the common topics of discussion?",
+                "What queries are frequently asked?"
             ],
             "responses": [
                 "You can ask me about the bus routes, bus schedules, bus frequencies, bus operating days, bus guidelines, bus inquiries and any other questions related to the UM shuttle bus service.",
-                "I can provide information on the bus routes, bus schedules, bus frequencies, bus operating days, bus guidelines, bus inquiries and any other questions related to the UM shuttle bus service."
+                "I can provide information on the bus routes, bus schedules, bus frequencies, bus operating days, bus guidelines, bus inquiries and any other questions related to the UM shuttle bus service.",
+                "Feel free to inquire about the UM shuttle bus routes, timetables, service frequency, days of operation, travel guidelines, and any other information pertaining to the UM shuttle bus service."
+            ]
+        },
+        {
+            "tag": "UM CENTRAL",
+            "patterns": [
+                "What routes can I take to get to UM Central?",
+                "How do I get to UM Central?",
+                "Which bus should I take to reach UM Central?",
+                "How can I reach UM Central?",
+                "Which routes go to UM Central?",
+                "How do I travel to UM Central?",
+                "What buses go to UM Central?"
+            ],
+            "responses": [
+                "To go to UM Central, you can take the buses of route(s): ",
+                "To reach UM Central, you can use the following bus route(s): ",
+                "To travel to UM Central, you can board the buses of route(s): "
+            ]
+        }, 
+        {
+            "tag": "KK13",
+            "patterns": [
+                "What routes can I take to get to Kolej Kediaman 13?",
+                "What routes can I take to get to Kolej Kediaman Tiga Belas?",
+                "What routes can I take to get to 13th Residential College",
+                "What routes can I take to get to Residential College Thirteen?",
+                "What routes can I take to get to KK13?",
+                "How do I get to Kolej Kediaman 13?",
+                "How do I get to Kolej Kediaman Tiga Belas?",
+                "How do I get to 13th Residential College?",
+                "How do I get to Residential College Thirteen?",
+                "How do I get to KK13?",
+                "Which bus should I take to reach Kolej Kediaman 13?",
+                "Which bus should I take to reach Kolej Kediaman Tiga Belas?",
+                "Which bus should I take to reach 13th Residential College?",
+                "Which bus should I take to reach Residential College Thirteen?",
+                "Which bus should I take to reach KK13?",
+                "How can I reach Kolej Kediaman 13?",
+                "How can I reach Kolej Kediaman Tiga Belas?",
+                "How can I reach 13th Residential College?",
+                "How can I reach Residential College Thirteen?",
+                "How can I reach KK13?",
+                "Which routes go to Kolej Kediaman 13?",
+                "Which routes go to Kolej Kediaman Tiga Belas?",
+                "Which routes go to 13th Residential College?",
+                "Which routes go to Residential College Thirteen?",
+                "Which routes go to KK13?",
+                "How do I travel to Kolej Kediaman 13?",
+                "How do I travel to Kolej Kediaman Tiga Belas?",
+                "How do I travel to 13th Residential College?",
+                "How do I travel to Residential College Thirteen?",
+                "How do I travel to KK13?",
+                "What buses go to Kolej Kediaman 13?",
+                "What buses go to Kolej Kediaman Tiga Belas?",
+                "What buses go to 13th Residential College?",
+                "What buses go to Residential College Thirteen?",
+                "What buses go to KK13?"
+            ],
+            "responses": [
+                "To go to KK13, you can take the buses of route(s): ",
+                "To reach KK13, you can use the following bus route(s): ",
+                "To travel to KK13, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "KK10",
+            "patterns": [
+                "What routes can I take to get to Kolej Kediaman 10?",
+                "What routes can I take to get to Kolej Kediaman Sepuluh?",
+                "What routes can I take to get to 10th Residential College",
+                "What routes can I take to get to Residential College Ten?",
+                "What routes can I take to get to KK10?",
+                "What routes can I take to get to Kolej Kediaman Tun Ahmad Zaidi?",
+                "How do I get to Kolej Kediaman 10?",
+                "How do I get to Kolej Kediaman Sepuluh?",
+                "How do I get to 10th Residential College?",
+                "How do I get to Residential College Ten?",
+                "How do I get to KK10?",
+                "How do I get to Kolej Kediaman Tun Ahmad Zaidi?",
+                "Which bus should I take to reach Kolej Kediaman 10?",
+                "Which bus should I take to reach Kolej Kediaman Sepuluh?",
+                "Which bus should I take to reach 10th Residential College?",
+                "Which bus should I take to reach Residential College Ten?",
+                "Which bus should I take to reach KK10?",
+                "Which bus should I take to reach Kolej Kediaman Tun Ahmad Zaidi?",
+                "How can I reach Kolej Kediaman 10?",
+                "How can I reach Kolej Kediaman Sepuluh?",
+                "How can I reach 10th Residential College?",
+                "How can I reach Residential College Ten?",
+                "How can I reach KK10?",
+                "How can I reach Kolej Kediaman Tun Ahmad Zaidi?",
+                "Which routes go to Kolej Kediaman 10?",
+                "Which routes go to Kolej Kediaman Sepuluh?",
+                "Which routes go to 10th Residential College?",
+                "Which routes go to Residential College Ten?",
+                "Which routes go to KK10?",
+                "Which routes go to Kolej Kediaman Tun Ahmad Zaidi?",
+                "How do I travel to Kolej Kediaman 10?",
+                "How do I travel to Kolej Kediaman Sepuluh?",
+                "How do I travel to 10th Residential College?",
+                "How do I travel to Residential College Ten?",
+                "How do I travel to KK10?",
+                "How do I travel to Kolej Kediaman Tun Ahmad Zaidi?",
+                "What buses go to Kolej Kediaman 10?",
+                "What buses go to Kolej Kediaman Sepuluh?",
+                "What buses go to 10th Residential College?",
+                "What buses go to Residential College Ten?",
+                "What buses go to KK10?",
+                "What buses go to Kolej Kediaman Tun Ahmad Zaidi?"
+            ],
+            "responses": [
+                "To go to KK10, you can take the buses of route(s): ",
+                "To reach KK10, you can use the following bus route(s): ",
+                "To travel to KK10, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "KK8",
+            "patterns": [
+                "What routes can I take to get to Kolej Kediaman 8?",
+                "What routes can I take to get to Kolej Kediaman Lapan?",
+                "What routes can I take to get to 8th Residential College",
+                "What routes can I take to get to Residential College Eight?",
+                "What routes can I take to get to KK8?",
+                "What routes can I take to get to Kolej Kediaman Kinabalu",
+                "How do I get to Kolej Kediaman 8?",
+                "How do I get to Kolej Kediaman Lapan?",
+                "How do I get to 8th Residential College?",
+                "How do I get to 8th Residential College Eight?",
+                "How do I get to KK8?",
+                "How do I get to Kolej Kediaman Kinabalu?",
+                "Which bus should I take to reach Kolej Kediaman 8?",
+                "Which bus should I take to reach Kolej Kediaman Lapan?",
+                "Which bus should I take to reach 8th Residential College?",
+                "Which bus should I take to reach 8th Residential College Eight?",
+                "Which bus should I take to reach KK8?",
+                "Which bus should I take to reach Kolej Kediaman Kinabalu?",
+                "How can I reach Kolej Kediaman 8?",
+                "How can I reach Kolej Kediaman Lapan?",
+                "How can I reach 8th Residential College?",
+                "How can I reach 8th Residential College Eight?",
+                "How can I reach KK8?",
+                "How can I reach Kolej Kediaman Kinabalu?",
+                "Which routes go to Kolej Kediaman 8?",
+                "Which routes go to Kolej Kediaman Lapan?",
+                "Which routes go to 8th Residential College?",
+                "Which routes go to 8th Residential College Eight?",
+                "Which routes go to KK8?",
+                "Which routes go to Kolej Kediaman Kinabalu?",
+                "How do I travel to Kolej Kediaman 8?",
+                "How do I travel to Kolej Kediaman Lapan?",
+                "How do I travel to 8th Residential College?",
+                "How do I travel to 8th Residential College Eight?",
+                "How do I travel to KK8?",
+                "How do I travel to Kolej Kediaman Kinabalu?",
+                "What buses go to Kolej Kediaman 8?",
+                "What buses go to Kolej Kediaman Lapan?",
+                "What buses go to 8th Residential College?",
+                "What buses go to 8th Residential College Eight?",
+                "What buses go to KK8?",
+                "What buses go to Kolej Kediaman Kinabalu?"
+            ],
+            "responses": [
+                "To go to KK8, you can take the buses of route(s): ",
+                "To reach KK8, you can use the following bus route(s): ",
+                "To travel to KK8, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "KK5",
+            "patterns": [
+                "What routes can I take to get to Kolej Kediaman 5?",
+                "What routes can I take to get to Kolej Kediaman Lima?",
+                "What routes can I take to get to 5th Residential College",
+                "What routes can I take to get to Residential College Five?",
+                "What routes can I take to get to KK5?",
+                "What routes can I take to get to Dayasari Residential College?",
+                "How do I get to Kolej Kediaman 5?",
+                "How do I get to Kolej Kediaman Lima?",
+                "How do I get to 5th Residential College?",
+                "How do I get to Residential College Five?",
+                "How do I get to KK5?",
+                "How do I get to Dayasari Residential College?",
+                "Which bus should I take to reach Kolej Kediaman 5?",
+                "Which bus should I take to reach Kolej Kediaman Lima?",
+                "Which bus should I take to reach 5th Residential College?",
+                "Which bus should I take to reach Residential College Five?",
+                "Which bus should I take to reach KK5?",
+                "Which bus should I take to reach Dayasari Residential College?",
+                "How can I reach Kolej Kediaman 5?",
+                "How can I reach Kolej Kediaman Lima?",
+                "How can I reach 5th Residential College?",
+                "How can I reach Residential College Five?",
+                "How can I reach KK5?",
+                "How can I reach Dayasari Residential College?",
+                "Which routes go to Kolej Kediaman 5?",
+                "Which routes go to Kolej Kediaman Lima?",
+                "Which routes go to 5th Residential College?",
+                "Which routes go to Residential College Five?",
+                "Which routes go to KK5?",
+                "Which routes go to Dayasari Residential College?",
+                "How do I travel to Kolej Kediaman 5?",
+                "How do I travel to Kolej Kediaman Lima?",
+                "How do I travel to 5th Residential College?",
+                "How do I travel to Residential College Five?",
+                "How do I travel to KK5?",
+                "How do I travel to Dayasari Residential College?",
+                "What buses go to Kolej Kediaman 5?",
+                "What buses go to Kolej Kediaman Lima?",
+                "What buses go to 5th Residential College?",
+                "What buses go to Residential College Five?",
+                "What buses go to KK5?",
+                "What buses go to Dayasari Residential College?"
+            ],
+            "responses": [
+                "To go to KK5, you can take the buses of route(s): ",
+                "To reach KK5, you can use the following bus route(s): ",
+                "To travel to KK5, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "INTERNATIONAL HOUSE",
+            "patterns": [
+                "What routes can I take to get to International House?",
+                "How do I get to International House?",
+                "Which bus should I take to reach International House?",
+                "How can I reach International House?",
+                "Which routes go to International House?",
+                "How do I travel to International House?",
+                "What buses go to International House?"
+            ],
+            "responses": [
+                "To go to International House, you can take the buses of route(s): ",
+                "To reach International House, you can use the following bus route(s): ",
+                "To travel to International House, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "FACULTY OF ENGINEERING",
+            "patterns": [
+                "What routes can I take to get to Faculty of Engineering?",
+                "What routes can I take to get to Engineering Faculty?",
+                "How do I get to Faculty of Engineering?",
+                "How do I get to Engineering Faculty?",
+                "Which bus should I take to reach Faculty of Engineering?",
+                "Which bus should I take to reach Engineering Faculty?",
+                "How can I reach Faculty of Engineering?",
+                "How can I reach Engineering Faculty?",
+                "Which routes go to Faculty of Engineering?",
+                "Which routes go to Engineering Faculty?",
+                "How do I travel to Faculty of Engineering?",
+                "How do I travel to Engineering Faculty?",
+                "What buses go to Faculty of Engineering?",
+                "What buses go to Engineering Faculty?"
+            ],
+            "responses": [
+                "To go to Faculty of Engineering, you can take the buses of route(s): ",
+                "To reach Faculty of Engineering, you can use the following bus route(s): ",
+                "To travel to Faculty of Engineering, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "FACULTY OF SCIENCE",
+            "patterns": [
+                "What routes can I take to get to Faculty of Science?",
+                "What routes can I take to get to Science Faculty?",
+                "How do I get to Faculty of Science?",
+                "How do I get to Science Faculty?",
+                "Which bus should I take to reach Faculty of Science?",
+                "Which bus should I take to reach Science Faculty?",
+                "How can I reach Faculty of Science?",
+                "How can I reach Science Faculty?",
+                "Which routes go to Faculty of Science?",
+                "Which routes go to Science Faculty?",
+                "How do I travel to Faculty of Science?",
+                "How do I travel to Science Faculty?",
+                "What buses go to Faculty of Science?",
+                "What buses go to Science Faculty?"
+            ],
+            "responses": [
+                "To go to Faculty of Science, you can take the buses of route(s): ",
+                "To reach Faculty of Science, you can use the following bus route(s): ",
+                "To travel to Faculty of Science, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "ACADEMY OF ISLAM STUDIES",
+            "patterns": [
+                "What routes can I take to get to Academy of Islamic Studies?",
+                "How do I get to Academy of Islamic Studies?",
+                "Which bus should I take to reach Academy of Islamic Studies?",
+                "How can I reach Academy of Islamic Studies?",
+                "Which routes go to Academy of Islamic Studies?",
+                "How do I travel to Academy of Islamic Studies?",
+                "What buses go to Academy of Islamic Studies?"
+            ],
+            "responses": [
+                "To go to Academy of Islamic Studies, you can take the buses of route(s): ",
+                "To reach Academy of Islamic Studies, you can use the following bus route(s): ",
+                "To travel to Academy of Islamic Studies, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "ACADEMY OF MALAY STUDIES",
+            "patterns": [
+                "What routes can I take to get to Academy of Malay Studies?",
+                "How do I get to Academy of Malay Studies?",
+                "Which bus should I take to reach Academy of Malay Studies?",
+                "How can I reach Academy of Malay Studies?",
+                "Which routes go to Academy of Malay Studies?",
+                "How do I travel to Academy of Malay Studies?",
+                "What buses go to Academy of Malay Studies?"
+            ],
+            "responses": [
+                "To go to Academy of Malay Studies, you can take the buses of route(s): ",
+                "To reach Academy of Malay Studies, you can use the following bus route(s): ",
+                "To travel to Academy of Malay Studies, you can board the buses of route(s): "
+            ]
+        },
+        {
+            "tag": "BANGSAR SOUTH",
+            "patterns": [
+                "What routes can I take to get to Bangsar South?",
+                "How do I get to Bangsar South?",
+                "Which bus should I take to reach Bangsar South?",
+                "How can I reach Bangsar South?",
+                "Which routes go to Bangsar South?",
+                "How do I travel to Bangsar South?",
+                "What buses go to Bangsar South?"
+            ],
+            "responses": [
+                "To go to Bangsar South, you can take the buses of route(s): ",
+                "To reach Bangsar South, you can use the following bus route(s): ",
+                "To travel to Bangsar South, you can board the buses of route(s): "
             ]
         }
     ]

@@ -3,7 +3,6 @@ import numpy as np
 import re
 import nltk
 from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
 
 stemmer = PorterStemmer()
 
@@ -16,9 +15,6 @@ def preprocess_text(text):
 
     # Tokenization
     words = nltk.word_tokenize(text)
-
-    # # Remove stopwords
-    # words = [w for w in words if w not in stopwords.words('english')]
 
     # Stemming
     words = [stemmer.stem(w) for w in words]

@@ -33,7 +33,7 @@ def load_data_and_model():
     all_words = sorted(set(all_words))
     tags = sorted(set(tags))
 
-    model = load_model('lstm_model.h5')
+    model = load_model('model.h5')
 
     return intents, data, all_words, tags, model
 

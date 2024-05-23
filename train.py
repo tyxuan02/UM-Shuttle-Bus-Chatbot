@@ -83,5 +83,5 @@ loss = history.history['loss'][-1]
 print(f"Accuracy: {accuracy:.2f}")
 print(f"Loss: {loss:.2f}")
 
-# Save the model and training data
-model.save('lstm_model.h5')
+# Save the model
+model.save('model.h5')

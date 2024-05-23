@@ -93,6 +93,6 @@ if prompt := st.chat_input("Ask me something..."):
 
         if (tag_probability >= 0.75):
             color = get_color_confidence(tag_probability)
-            st.markdown(f"<small style='color:{color}; font-weight:bold;'>Confidence Level: {tag_probability*100:.2f}%</small>", unsafe_allow_html=True)   
+            st.markdown(f"<small style='color:{color}; font-weight:bold;'>Confidence: {tag_probability*100:.2f}%</small>", unsafe_allow_html=True)   
 
     st.session_state.messages.append({"role": "assistant", "content": response, "image": image})

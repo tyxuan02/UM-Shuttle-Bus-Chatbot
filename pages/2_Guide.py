@@ -42,6 +42,12 @@ st.markdown("""
 - Can I reserve the shuttle bus for a special event?
 """)
 
+# Limitations
+st.write("\n\n")
+st.markdown("""
+**Limitation**: Currently, the chatbot is unable to suggest possible routes between two specific bus stops. Instead, it can only provide information about available bus routes based on a single bus stop input. For instance, you can ask: "Which buses go to the KK1 bus stop?".
+""")
+
 # Reminder
 st.write("\n\n")
 st.markdown("""

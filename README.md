@@ -10,4 +10,4 @@ As part of the group project for WID3002 (Natural Language Processing), we devel
 
 3. Run the chatbot: `streamlit run 1_Chatbot.py`
 
-## Run it on Streamlit
+### Run it on Streamlit

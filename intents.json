@@ -831,8 +831,8 @@
                 "I am a University of Malaya lecturer, can I use the shuttle bus service?"
             ],
             "responses": [
-                "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of UM students (not including UM foundation students - PASUM) and staff only.",
-                "The bus permit provided by Malaysia's Land Public Transport Agency is exclusively for the transportation of University of Malaya students, excluding those enrolled in the foundation program (PASUM), and university staff."
+                "The bus permit issued by the Land Public Transport Agency of Malaysia is for the use of current University of Malaya students (not including PASUM students) and staff only.",
+                "The bus permit provided by Malaysia's Land Public Transport Agency is exclusively for the transportation of current University of Malaya students (not including PASUM students) and university staff."
             ]           
         },
         {
@@ -996,7 +996,9 @@
                 "Are PASUM students eligible for the shuttle bus service?",
                 "Are PASUM students allowed to use the shuttle buses?",
                 "Is the shuttle bus service open to PASUM students?",
-                "Can PASUM students utilize the shuttle buses?"
+                "Can PASUM students utilize the shuttle buses?",
+                "I am a PASUM student, can I use the shuttle bus service?",
+                "I am a PASUM student, can I use UM buses?"
             ],
             "responses": [
                 "UM foundation students (PASUM) are not allowed to use the shuttle bus service, but they may be able to book a chartered bus for special events.",

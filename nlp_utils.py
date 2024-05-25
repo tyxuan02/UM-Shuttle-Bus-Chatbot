@@ -4,7 +4,7 @@ import re
 import nltk
 from nltk.stem.porter import PorterStemmer
 
-nltk.download("punkt")
+nltk.download("punkt") # Remove this line after first run
 
 stemmer = PorterStemmer()
 

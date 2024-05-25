@@ -113,10 +113,13 @@ def handle_next_previous_bus(selected_route, data, selected_response):
 
     for route in data['routes']:
         if route['route name'] == selected_route:
-            next_bus_time = get_next_bus(current_time, route['arrival times'])
-            previous_bus_time = get_previous_bus(current_time, route['arrival times'])
-                
-            selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
+            # Check if today is Saturday or Sunday
+            if now.weekday() == 5 or now.weekday() == 6:
+                selected_response = "The UM shuttle bus service is not running on weekends."
+            else:
+                next_bus_time = get_next_bus(current_time, route['arrival times'])
+                previous_bus_time = get_previous_bus(current_time, route['arrival times'])
+                selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
     return selected_response, None
 
 def get_next_bus(current_time, arrival_times):

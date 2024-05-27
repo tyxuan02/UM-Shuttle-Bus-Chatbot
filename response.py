@@ -11,6 +11,14 @@ def generate_response(tag, tag_prob, intents, data):
                 responses = intent['responses']
                 selected_response = random.choice(responses)
 
+                # Check if the tag contains "route" or "schedule", if so, check if it's a weekend
+                if "route" in tag or "schedule" in tag:
+                    # Get current time
+                    now = datetime.now()
+                    # Check if today is Saturday or Sunday
+                    if now.weekday() == 5 or now.weekday() == 6:
+                        selected_response = "Please note that the UM shuttle bus service is not running on weekends. " + selected_response
+
                 # Handle specific responses
                 # Route
                 if tag == "route":

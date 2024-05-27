@@ -1,13 +1,15 @@
 ## WID3002 - UM Shuttle Bus Chatbot
 
-As part of the group project for WID3002 (Natural Language Processing), we developed the UM Shuttle Bus Chatbot, a generative-based chatbot designed to provide information about UM shuttle bus schedules, routes and FAQs. Leveraging Natural Language Processing (NLP) techniques and a Sequential LSTM model, the chatbot can respond to different user queries. The chatbot is implemented using Python and Streamlit.
+As part of the group project for WID3002 (Natural Language Processing), we developed the UM Shuttle Bus Chatbot, a generative-based chatbot designed to provide information about UM shuttle bus schedules, routes and FAQs. Leveraging Natural Language Processing (NLP) techniques and a sequential model, the chatbot can respond to different user queries. The chatbot is implemented using Python and Streamlit.
 
 ### Run it locally
 
-1. Download required libraries: `pip install -r requirements.txt`
+Download required libraries: `pip install -r requirements.txt`
 
-2. Train the model for the chatbot (Optional, as the model is already trained and saved as `model.h5`): `python train.py` 
+Upgrade streamlit to the latest version: `pip install --upgrade streamlit`
 
-3. Run the chatbot: `streamlit run 1_Chatbot.py`
+Train the model for the chatbot (Optional, as the model is already trained and saved as `model.h5`): `python train.py` 
+
+Run the chatbot: `streamlit run 1_Chatbot.py`
 
 ### Run it on Streamlit

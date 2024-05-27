@@ -15,11 +15,6 @@ with st.container():
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #333;
-    }
     .content {
         font-size: 1.25rem;
         color: #555;
@@ -32,7 +27,6 @@ with st.container():
 
     st.markdown("""
     <div class="container">
-        <p class="title">Please Note</p>
         <p class="content">
             The <span class="highlight">UM Shuttle Bus Chatbot</span> is designed to provide users with information about the UM Shuttle Bus service.
         </p>

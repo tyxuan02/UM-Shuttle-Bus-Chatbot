@@ -14,4 +14,4 @@ Run the chatbot: `streamlit run 1_Chatbot.py`
 
 ### Run it on Streamlit
 
-Run the chatbot on Streamlit: `https://um-shuttle-bus-chatbot-ewe5vzhmtefsskb4n7925g.streamlit.app/`
+Run the chatbot on Streamlit: [UM Shuttle Bus Chatbot](https://share.streamlit.io/um-shuttle-bus-chatbot/1_Chatbot.py)

@@ -13,3 +13,5 @@ Train the model for the chatbot (Optional, as the model is already trained and s
 Run the chatbot: `streamlit run 1_Chatbot.py`
 
 ### Run it on Streamlit
+
+Run the chatbot on Streamlit: `https://um-shuttle-bus-chatbot-ewe5vzhmtefsskb4n7925g.streamlit.app/`

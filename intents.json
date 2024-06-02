@@ -768,7 +768,10 @@
                 "Can I have a snack or drink on the bus?",
                 "Can I consume food or beverages while on the bus?",
                 "Can I bring food to the bus?",
-                "Can I bring drinks to the bus?"
+                "Can I bring drinks to the bus?",
+                "Can I bring food or water on the bus?",
+                "Anything that is not allowed on the bus?",
+                "Anything that I cannot bring on the bus?"
             ],
             "responses": [
                 "Food and drinks are not allowed on the bus.",
@@ -875,7 +878,8 @@
                 "I am a University of Malaya student, do I need to show my student card to take the shuttle bus?",
                 "I am a University of Malaya student, do I need to show my student ID to take the shuttle bus?",
                 "I am a UM student, do I need to show my student card to take the shuttle bus?",
-                "I am a UM student, do I need to show my student ID to take the shuttle bus?"
+                "I am a UM student, do I need to show my student ID to take the shuttle bus?",
+                "Anything to bring for taking the UM shuttle bus?"
             ],
             "responses": [
                 "The shuttle bus service is free for UM students and staff. You need either a UM student card or an offer letter for those who have not yet obtained a UM student card.",
@@ -1101,7 +1105,8 @@
                 "What topics are covered in your FAQ?",
                 "What questions do you typically answer?",
                 "What are the common topics of discussion?",
-                "What queries are frequently asked?"
+                "What queries are frequently asked?",
+                "How to use this chatbot?"
             ],
             "responses": [
                 "You can ask me about the bus routes, bus schedules, bus frequencies, bus operating days, bus guidelines, bus inquiries and any other questions related to the UM shuttle bus service.",

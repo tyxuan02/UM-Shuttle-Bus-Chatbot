@@ -79,6 +79,7 @@ if prompt := st.chat_input("Ask me something..."):
     preprocessed_sentence = preprocess_text(prompt)
     X_new = np.array([bag_of_words(preprocessed_sentence, all_words)])
     y_pred = model.predict(X_new, verbose=0)
+    print(y_pred)
     predicted_tag = tags[np.argmax(y_pred)]
     tag_probability = y_pred[0][np.argmax(y_pred)]
 

@@ -324,7 +324,9 @@
                 "Timetable for the UM shuttle bus service",
                 "Shuttle bus service schedule",
                 "Shuttle bus service timetable",
-                "Shuttle bus service time"
+                "Shuttle bus service time",
+                "Can you tell me the schedule for the UM shuttle bus?",
+                "Can you provide me the schedule for the UM shuttle bus?"
             ],
             "responses": [
                 "Here is the bus schedule:",

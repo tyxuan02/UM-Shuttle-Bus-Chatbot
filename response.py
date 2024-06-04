@@ -1,7 +1,7 @@
 import random
-import json
 import streamlit as st
 from datetime import datetime
+import pytz
 
 # Generate response
 def generate_response(tag, tag_prob, intents, data):
@@ -13,8 +13,11 @@ def generate_response(tag, tag_prob, intents, data):
 
                 # Check if the tag contains "route" or "schedule", if so, check if it's a weekend
                 if "route" in tag or "schedule" in tag:
-                    # Get current time
-                    now = datetime.now()
+                    # Define the Malaysia time zone
+                    malaysia_tz = pytz.timezone('Asia/Kuala_Lumpur')
+
+                    # Get current time in Malaysia time zone
+                    now = datetime.now(malaysia_tz)
                     # Check if today is Saturday or Sunday
                     if now.weekday() == 5 or now.weekday() == 6:
                         selected_response = "Please note that the UM shuttle bus service is not running on weekends. " + selected_response
@@ -114,8 +117,11 @@ def generate_response(tag, tag_prob, intents, data):
         return "I'm sorry, I don't understand. Please try a different question.", None
 
 def handle_next_previous_bus(selected_route, data, selected_response):
-    # Get current time
-    now = datetime.now()
+    # Define the Malaysia time zone
+    malaysia_tz = pytz.timezone('Asia/Kuala_Lumpur')
+
+    # Get current time in Malaysia time zone
+    now = datetime.now(malaysia_tz)
     current_time = now.strftime("%H:%M")
 
     for route in data['routes']:
@@ -124,27 +130,27 @@ def handle_next_previous_bus(selected_route, data, selected_response):
             if now.weekday() == 5 or now.weekday() == 6:
                 selected_response = "The UM shuttle bus service is not running on weekends."
             else:
-                next_bus_time = get_next_bus(current_time, route['arrival times'])
-                previous_bus_time = get_previous_bus(current_time, route['arrival times'])
+                next_bus_time = get_next_bus(current_time, route['arrival times'], malaysia_tz)
+                previous_bus_time = get_previous_bus(current_time, route['arrival times'], malaysia_tz)
                 selected_response = selected_response.replace("{next bus time}", next_bus_time).replace("{previous bus time}", previous_bus_time)
     return selected_response, None
 
-def get_next_bus(current_time, arrival_times):
+def get_next_bus(current_time, arrival_times, tz):
     format = "%H:%M"
-    current_time = datetime.strptime(current_time, format)
+    current_time = datetime.strptime(current_time, format).replace(tzinfo=tz)
 
     for time in arrival_times:
-        time = datetime.strptime(time, format)
+        time = datetime.strptime(time, format).replace(tzinfo=tz)
         if time > current_time:
             return time.strftime(format)
     return arrival_times[0]
 
-def get_previous_bus(current_time, arrival_times):
+def get_previous_bus(current_time, arrival_times, tz):
     format = "%H:%M"
-    current_time = datetime.strptime(current_time, format)
+    current_time = datetime.strptime(current_time, format).replace(tzinfo=tz)
     
     for time in reversed(arrival_times):
-        time = datetime.strptime(time, format)
+        time = datetime.strptime(time, format).replace(tzinfo=tz)
         if time < current_time:
             return time.strftime(format)
     return arrival_times[-1]

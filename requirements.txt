@@ -2,3 +2,4 @@ nltk
 pandas
 streamlit
 tensorflow
+pytz
